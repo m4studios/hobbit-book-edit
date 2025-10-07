@@ -1,854 +1,917 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <title>M4's "The Hobbit" Fan Edit – Tolkien Inspired Fan Edit of Peter Jackson's Trilogy</title>
-    <meta name="description" content="The M4 edit recuts Peter Jackson's The Hobbit film trilogy into a single movie that follows J.R.R. Tolkien's book more closely. New VFX, color grading, and more.">
-    <meta name="keywords" content="hobbit, tolkien, fan edit, book accurate">
-    <meta name="author" content="M4 & some code inspired by Caleb Gamman">
-    <link rel="canonical" href="https://m4studios.github.io/hobbit-book-edit/">
-    <meta name="theme-color" content="#e0d7d3">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://m4studios.github.io/hobbit-book-edit/">
-    <meta property="og:title" content="M4's The Hobbit Fan Edit – Tolkien Inspired Recut">
-    <meta property="og:description" content="The M4 edit recuts Peter Jackson's The Hobbit film trilogy into a single movie that follows J.R.R. Tolkien's book more closely.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://m4studios.github.io/hobbit-book-edit/">
-    <meta name="twitter:title" content="M4's The Hobbit Fan Edit – Tolkien Inspired Recut">
-    <meta name="twitter:description" content="The M4 edit recuts Peter Jackson's The Hobbit film trilogy into a single movie that follows J.R.R. Tolkien's book more closely.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp">
-
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "M4's The Hobbit Fan Edit",
-    "description": "A fan edit that recuts Peter Jackson's Hobbit trilogy into a single movie that follows J.R.R. Tolkien's book more closely.",
-      "url": "https://m4studios.github.io/hobbit-book-edit/",
-      "image": "https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp",
-      "author": {
-        "@type": "Person",
-        "name": "M4",
-        "sameAs": [
-  "https://ifdb.fanedit.org/m4s-the-hobbit-book-edit",
-  "https://www.youtube.com/c/m4studios",
-  "https://originaltrilogy.com/topic/the-hobbit-m4-book-edit-released/id/79411/"
-]
-
-      }
-    }
-    </script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="../imgslider.js"></script>
-    <link type="text/css" href="../neumorphism.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../fixingstyles.css">
-    <link rel="stylesheet" href="../lite-yt-embed.css" />
-    <script src="../lite-yt-embed.js"></script>
-    
-    <meta name="robots" content="index, follow">
-
-    <style>
-    body
-    {
-      position: relative;
-    font-family: Georgia;
-    }
-    .toc{
-      color:#212529;
-      text-align: left;
-      font-weight: normal;
-      background-color: #f3f3f3;
-    }
-    .nav-link.active{
-      font-weight: 500;
-    }
-  .nav-link.badge.toc.rounded-pill.active {
-    background-color: #AF4D50;
-  }
-  .nav-link:hover {
-    color: #AF4D50; /* Replace with the desired color on hover */
-  }
-  .list-group-item img.default-image {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain the aspect ratio */
-  }
-  .list-group-item img.exclude-image {
-    max-width: 50%; /* Adjust the maximum width as needed */
-    height: auto; /* Maintain the aspect ratio */
-  }
-    .dif-font {
-      font-family: "Arial"  !important; /* Override the font for this class */
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: bold;
-    }
-    .col.mt-3 {
-      box-shadow: 0 1px 8px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
-    }
-    .card .card-img.special {
-      border-radius: 0; /* Set border-radius to 0 to remove rounded edges */
-    }
-    .navbar-square {
-      background-color: #CEB9B9; /* Choose your desired background color */
-      border-radius: 10px; /* Adjust the border-radius for rounded edges */
-      height: 101%; /* Cover the full height of the navbar */
-      width: 205px; /* Adjust the width of the background square */
-      position: absolute;
-      left: 0;
-      top: 1;
-      z-index: -1; /* Move the square to the background */
-      box-shadow: 0 1px 8px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
-    }
-    .nav-link {
-      padding-bottom: 5px; /* Adjust to match the height of the square */
-    }
-    .indented-paragraph {
-      text-indent: 3em; /* Adjust the indentation to your preference */
-      padding: 3px; /* Adjust the padding to your preference */
-
-    }
-    .card {
-      overflow: hidden; /* Hide content that overflows the card */
-    }
-  .button {
-      font-family: "Verdana"  !important; /* Override the font for this class */
-
-    border: none;
-    padding: 16px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 20px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-      box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
-    font-weight: bold
-
-  }
-  .button1 {
-    background-color: #BB4949; 
-    color: #EBEBEB
-  }
-  .button1:hover {
-    background-color: #FEE8AA;
-    color: black 
-  }
-    .container {
-      display: flex;
-    }
-    .video, .image {
-      margin: 0 10px; /* Adjust margin to add space between video and image */
-      margin-right: 150px; /* Adjust margin to move the image to the left */
-    }
-    .video iframe {
-      object-fit: cover; /* Maintain aspect ratio and cover the container */
-    }
-    .image img {
-      width: 85%;
-      height: auto
-      object-fit: cover; /* Maintain aspect ratio and cover the container */
-      margin-left: 150px; /* Adjust margin to move the image to the left */
-    }
-@media (max-width: 576px) {
-  .indented-paragraph {
-    display: none; /* Hide the paragraph on mobile */
-  }
-    .video, .image {
-      margin: 0 0; /* Adjust margin to add space between video and image */
-      margin-right: 0; /* Adjust margin to move the image to the left */
-    }
-    .image img {
-      width: 100%;
-      height: auto
-      object-fit: cover; /* Maintain aspect ratio and cover the container */
-      margin-left: 0; /* Adjust margin to move the image to the left */
-    }
-}
-    </style>
-
-  <!-- ****** faviconit.com favicons ****** -->
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="favicon-192.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-  <link rel="apple-touch-icon" href="favicon-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="favicon-144.png">
-  <meta name="msapplication-config" content="browserconfig.xml">
-  <!-- ****** faviconit.com favicons ****** -->
-  
-  </head>
-
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="200" data-bs-method="auto" style="background-color:#e0d7d3;">
-
-    <div class="row g-0">
-      <div class="col-7 col-sm-5 col-md-4 col-lg-2">
-      <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light p-3 pb-0 sticky-top d-none d-sm-block">
-          <div class="container-fluid">
-<div class="navbar-square"></div>
-            <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <div class="navbar-square"></div>
-
-              <nav class="nav nav-pills flex-column justify-content-start">
-                <a class="nav-link badge toc rounded-pill dif-font" href="#m4hobbit"><b>M4's <i>The Hobbit</i> Book Edit</b></a>
-          <a class="nav-link badge toc rounded-pill dif-font" href="#goals"><b>Goals & Editing Information</b></a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#overall"><b>Overall Changes</b></a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter1">1. An Unexpected Party</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter2">2. Roast Mutton</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter3">3. A Short Rest</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter4">4. Over Hill and Under Hill</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter5">5. Riddles in the Dark</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter6">6. Out of the Frying-Pan<br>into the Fire</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter7">7. Queer Lodgings</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter8">8. Flies and Spiders</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter9">9. Barrels Out of Bond</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter10">10. A Warm Welcome</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter11">11. On the Doorstep</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter12">12-13. Inside Information /<br>Not at Home</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter14">14. Fire and Water</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter15">15. The Gathering of the Clouds</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter16">16. A Thief in the Night</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter17">17. The Clouds Burst</a>
-                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter18">18-19. The Return Journey /<br>The Last Stage</a>
-        <a class="nav-link badge toc rounded-pill dif-font" href="#special"><b>Special Features</b></a>
-        <a class="nav-link badge toc rounded-pill dif-font" href="#downloads"><b>Downloads</b></a>
-
-              </nav>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-      <div class="col-lg-8 pb-5 px-2">
-        <div class="container-fluid">
-
-          <!--The Hobbit M4 Book Edit-->
-          <div id="m4hobbit" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="position-relative ratio" style="--bs-aspect-ratio: 40%">
-                <img class="card-img special" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp" alt="The Hobbit Tolkien Fan Edit Recut" >
-                <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                  <h1 class="display-2 mb-0 text-white neumorphtext" style="font-weight: bold !important;line-height: 1;">
-                  <br class="d-none d-sm-block">
-                  </h1>
-                </div>
-              </div>
-        <center>
-        <li class="list-group-item">A fan edit that combines Peter Jackson's <i>The Hobbit</i> trilogy into a more captivating faithfully adapted single-movie experience.</li>
-               <br>
-               <b>
-                  HD 1080p&ensp;|&ensp;DTS 5.1 Surround Sound&ensp;|&ensp;New Visual Effects&ensp;|&ensp;Color Grading&ensp;|&ensp;Revised in 2024
-        </b>
-        </center>
-<br>
-
-<div class="container">
-
-     <div class="image">
-      <img src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-m4-book-edit.jpg" alt="The Hobbit Fan Edit">
-    </div>
-        <div class="video">
-        <p class="indented-paragraph">
-I felt these films had "too much," whether it was all the added sideplots, action, new characters, or even the CGI. As a huge fan of J.R.R. Tolkien's book, I decided to edit these movies down to match closer to what was written while also rectifying many common critiques. This project is for both the purist and casual fans alike, with the end result providing a more focused narrative that I find more enjoyable and emotionally impactful.</p>
-    <p class="indented-paragraph">
-                I initially edited with the book at my side, page by page, starting on June 19th, 2019. After numerous revisions to make the edit seamless for general audiences and feel as professional as possible, I finished on December 24th, 2021. I also worked on two last revision, one in September of 2023 and one released in June of 2024, where I am now fully satisfied with the cut after many years of work.</p>
-
-               </div>
-
-  </div>
-</li>
-<br>
-
-
-
-              <center><br>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZKmXqXxtVc?si=QU1NUo1l6UQ86nmO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <br>
-  
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Gm2CDRDPJmU?si=_Nwn7QcnAGGymuBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
-                <li class="list-group-item"><center>                  
-                  <a href="https://ifdb.fanedit.org/m4s-the-hobbit-book-edit"><b>IFDb Approval</b></a> <b>&ensp;|&ensp;</b> 
-                  <a href="https://originaltrilogy.com/topic/the-hobbit-m4-book-edit-released/id/79411"><b>OriginalTrilogy Thread</b></a> <b>&ensp;|&ensp;</b>
-                  <a href="https://youtube.com/playlist?list=PL2NncXI-rDFqVnYeKEWGEEhGwmNktjWRi"><b>Community Media</b></a> <b>&ensp;|&ensp;</b>
-                  <a href="mailto: thelastlight2941@protonmail.com" title="thelastlight2941@protonmail.com"><b>Email Contact</b></a> 
-                  <br>
-                  <br>
-                  <h4><a href = "https://discord.gg/CwNtGphfCZ"> <b>Questions, comments? Join my Discord!</b></h4></a>
-                    <h2 class="pt-2">ATTENTION - October 2025</h2>
-                  </center>
-                  <html lang="en"> <head> <meta charset="utf-8" /> </head> <body> <p> I have transitioned my website domain to this website at "m4studios", as I have lost my ability to edit the old website at "m4-studios" with a dash. The old website will be hidden. The new URL will always be here, at <a href="https://m4studios.github.io/hobbit-book-edit/">m4studios.github.io/hobbit-book-edit</a>. </p> </body> </html>
-                  </li>
-
-              </ul>
-            </div>
-          </div>
-          <!--Editing Goals-->
-          <div id="goals" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">Goals & Editing Information</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>1) Be more faithful to <i>The Hobbit</i> by J.R.R. Tolkien</b> while still retaining Peter Jackson’s cinematic Middle-earth vision in the areas where it shined. Includes making the story focus on Bilbo, the main quest, and decreasing the numerous references to <i>The Lord of the Rings</i>, allowing both stories to stand on their own.</li>
-                <li class="list-group-item"><b>2) Consistent tone</b> as the story progresses from its lighthearted beginning to more serious ending. With this, display a convincing atmosphere with more realistic action, physics, and visuals. This aids in forming a more natural transition from <i>The Hobbit</i> to <i>The Lord of the Rings</i> despite the different scope of each story.</li>
-                <li class="list-group-item"><b>3) Execute with professional film editing techniques</b>, specifically with making smooth audio transitions, maintaining a proper surround sound mix, and keeping intact the pacing, character arcs, and story structure. Work with lossless sources and avoid any unnecessary quality loss.</li>
-                <li class="list-group-item"><b>4) Stay in Middle-earth as long as possible</b> with our beloved characters, meaning all available footage (theatrical, extended, and deleted) has been considered. Cutting characterization or book-accurate moments just for the sake of runtime is avoided. Hence, <b>this fan edit is categorized as its own "Extended Edition"</b> to justify the runtime just like how <i>The Lord of the Rings</i> had its own extended cuts. Theoretically, my cut could be further trimmed to a "theatrical" runtime, which is what would have been shown in theaters if this version was official.</li>
-                <li class="list-group-item"><b>5) Appeal to general audiences</b> by still being a cohesive and cinematic film experience despite closer adherence to the book. New fans should also be able to enjoy this edit without any prior knowledge of Middle-earth books or films. </li>
-                <li class="list-group-item"><b>Sources:</b>
-          <ol>
-            <li><i><b>An Unexpected Journey</b></i> (Footage retained: 1 hour 43 min.) &#160;|&#160; 40% cut
-            <li><i><b>The Desolation of Smaug</b></i> (Footage retained:  1 hour 13 min.) &#160;|&#160; 58% cut
-            <li><i><b>The Battle of the Five Armies</b></i> (Footage retained: 1 hour 9 min.) &#160;|&#160; 55% cut
-              </ol>
-        
-                </li>
-                <li class="list-group-item"><b>Editing Resources:</b>
-          <ul>
-            <li>Adobe Premiere, Adobe Photoshop, Adobe Encore, DTS-HD Master Audio Suite, Audacity, Subtitle Edit, MediaInfo, MakeMKV, FFmpeg
-            <li>Howard Shore’s <i>The Hobbit Original Motion Picture Soundtracks</i> (Special Editions) [CDQ]
-            <li>Howard Shore's <i>The Hobbit - The Complete Recordings</i> (Fan Project)
-            <li><i>The Hobbit</i> Appendices
-            <li>Various free & self-recorded sound effects
-          </ul>
-                <li class="list-group-item"><b>Additional Credit:</b>
-                  <br>
-            Originally a solo project, but these individuals reached out to help fix continuity in several parts of the cut.
-          <ul>
-            <li>Eric Odmyr - digital alterations <i>(shown above)</i>
-            <li>Michael Sinclair - digital alteration <i>(chapter 4)</i>
-          </ul>
-                <li class="list-group-item"><b>Runtime:</b>
-                <br>
-              <i>The Hobbit</i> – 256 Mins. (4:05 hours without credits) &#160;|&#160; 51% cut out of the original 8 hours 19 minutes
-<br>With the extended <i>Lord of the Rings</i> films at 228, 235, and 263 minutes respectively, I feel this fits right in. 
-
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Overall Changes-->
-          <div id="overall" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">Overall Changes</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">All three <b>Extended Edition Hobbit films</b> ripped from the official 1080p Blu-rays and <b>combined into one movie</b>, with <i>An Unexpected Journey</i> being the first half and <i>The Desolation of Smaug</i> & <i>The Battle of the Five Armies</i> covering the second half.
-                    <ul>
-                      <li>On the digital versions, the movie is split with a short “Intermission.”
-                      <li>On the Blu-ray version, the parts are split by disc with an “Insert next disc” screen.
-                      <br>
-                      <br>
-                      <center>
-                      <img height="200" class="card-img-fluid"  class="exclude-image" src="https://lh3.googleusercontent.com/pw/AM-JKLVl1BO8DzJubS-Bj7b_S9cPs9X161M0hrLoMDwFpBn6BmVHz5gwp6OtqLLP17cxZ3tyroalC_hgaKfiKhd5rBy88bcmRzYPx17dk88LSfHzP2fAvMC_-nYiKftLFOqVBclA1-v453Vl41RqRjC3gILA=w1440-h600-no?authuser=3"> 
-                      </center>
-                    </ul>
-                    </li>
-
-          <li class="list-group-item"><b>Subtle visual changes to make the films look more natural</b> and match closer with <i>The Lord of the Rings</i> films. While <i>The Hobbit</i> still deserves its own visual direction (it is a different type of story than the following trilogy), I still felt like the original look felt off:
-                    <ul>
-                      <li>Applied a 35mm film grain overlay throughout the entire edit to reduce the digital look.
-                      <li>Reduced saturation/vibrancy and highlights where necessary to tone down the original color grading, offering a more natural look that also blends all three films together.
-                      <li>Reduced green levels and bumped up the reds/blues to remove the subtle green tint that varied throughout the original films, for both reasons described above.
-                    </ul>
-                <center>
-<!--                 <br>
-                <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/greentint1_1.gif" width="750" height="312">
-                <br>
-                <br> -->
-                </center>
-                </li>
-                    </li>
-                <li class="list-group-item">Book chapters in the film are now reflected with their respective movie portion, indicated by the chapter stops. I read the book while editing to make sure I could stay as faithful as possible, all while still respecting the limitations described in my editing goals.
-                <br><br>
-                                      <center>
-
-                <i>There are several hundred changes in this project (big and small) that you can read about in the document within the download link</a>, below is just a summary of the main changes in each chapter.</i></li>
-</center>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 1-->
-          <div id="chapter1" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">1. An Unexpected Party</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">The “Sack of Erebor” flashback has been cut, leaving only a short prologue with old Bilbo, now beginning with <i>“In a hole in the ground...”</i> All Frodo dialogue has been removed, instead leaving him with only a short visual cameo. After just a few minutes, we begin the main story of young Bilbo, cutting past the original film title screen as this edit is only titled <i>The Hobbit</i>.
-              <center><br>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/GlWReFMmk4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-                </li> 
-                <li class="list-group-item">"Blunt the Knives" songs is retained but slightly trimmed to remove some of the most ridiculous CGI plate tricks.</li>
- 
-                <li class="list-group-item">Small trims to remove some of the most excessively silly moments. Because the book had its share of silly moments&mdash;usually witty/ironic/charming and not immature&mdash;my philosophy was to try to remove humor that went too far while keeping humor that was either in the book or did it justice and deserved to stay. Examples that were cut here include Ori’s gross loud burp, Bombur “eating cheese by the block,” or shoving an axe up Smaug's "jacksy."
-               <li class="list-group-item">
-                <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/party.webp">
-                </li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> Most of the Shire market scene with Bilbo is kept to give us more time with him and the Hobbits so we can appreciate the contrast in lifestyle once we enter the wild. I also have included some extra Dwarf characterization for Óin/Bifur and Thorin/Balin, as I want the audience to connect with each of the Dwarves as much as possible now that the movie's focus is brought back to the main quest.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 2-->
-          <div id="chapter2" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">2. Roast Mutton</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Removed the Moria flashback with Azog & Thorin as Bilbo is kept the centerpiece of the story. In fact, Azog is not seen or referenced until <i>The Battle of the Five Armies</i> portion where he is introduced as a nameless Orc villain.</li>
-                <li class="list-group-item">When the Company hears Orcs at night it serves as foreshadowing for when an Orc pack shows up to attack them later after the Goblin caves.</li>
-                <li class="list-group-item">Removed Radagast entirely from the film, instead leaving just a few of Gandalf's references to his existence for the sake of world building.</li>
-                <li class="list-group-item">Trimmed some of the most excessive silly moments or dialogue in the Troll sequence, staying in line with my editing philosophy regarding humor.</li>
-                <li class="list-group-item">
-                <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/Trollshaws.webp"></li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 3-->
-          <div id="chapter3" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">3. A Short Rest</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Instead of Radagast showing up after the Troll cave and leading into the ensuing Warg chase, the music transitions into a new hiking montage using footage taken from later in the film showing the Company progress through the wild.</li>
-                <li class="list-group-item">As always, removed the most offending silly moments, including cutting the Elf-Dwarf romance jokes and some other moments that went too far.</li>
-                <li class="list-group-item">The White Council scene is cut and an abbreviated version can be found on my Special Features. As soon as Elrond and Gandalf walk off at night, we cut away with a new music transition to various establishing shots of Rivendell in the morning with Bilbo (who no longer finds the Shards of Narsil). The heavy handed connections to <i>The Lord of the Rings</i> films throughout <i>The Hobbit</i> films felt out of place and unnecessary from my perspective, especially considering my goal of being accurate to the book. As such, I have cut back on the fan service and instead let the audience enjoy connections between the two stories through more subtle references.
-                </li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/Rivendell.webp"></li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> All of the Rivendell extended material pertaining to Bilbo & the quest is kept. We get more dialogue with Gandalf/Bilbo before they enter the valley, a well-needed discussion between Gandalf/Elrond to explain the grander purpose of this quest, and a beautiful scene with Elrond/Bilbo which not only introduces their friendship, but also sets up Bilbo's motivations as he enters into the Misty Mountains.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 4-->
-          <div id="chapter4" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">4. Over Hill and Under Hill</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/over%20hill.webp"></li>
-                <li class="list-group-item">Using the remaining hiking footage, as some was used earlier, the Dwarves enter the Misty Mountains while the most triumphant part of the Misty Mountains theme plays.</li>
-                <li class="list-group-item">Cut all Stone Giants, now Bilbo simply falls due to the slippery rocks and the distracting lightning. He is rescued and the following characterization with Thorin remains intact. While Stone Giants were briefly mentioned in the book, I consider the sequence itself ridiculous and their portrayal wildly inaccurate.</li>
-                <li class="list-group-item">Digitally altered a repurposed shot of the Dwarves to fix continuity, as they are supposed to turning their heads to look over at Bilbo.
-                <br>
-                <center><i>Can you spot the difference?</i></center><br>
-                <center>
-                <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLWlNgFsKSmB5EeBj6GpuWu2Hbl889KqATOGVDSGRcGxDWizALJu7w3GL8sQl3M3GKWPJPiaYE2ouPe21eiCOeekmATb5S3vJha0VHelz5FOIIg-5udMCRGHilo9IqJIn22enB3lSvyQg4_zMaS86YV7=w1920-h800-no?authuser=0" width="500" height="208">
-                &#160; &#160; &#160;
-                 <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLW03DZwA5VxISY7mgYTn0qjjf5b3ZkeBx0TFIuNWRLtO6XSFnjlQNd20MfUIKRWQAJEqoVPtN6mMdH5UPWNbtPR_srLpMecpyawyRqUwYPY20laSlWm1H9Mowi6njv5s8uNoJxuakSZ9iPDFvr57qB4=w1920-h800-no?authuser=0" width="500" height="208">
-                </center>
-                <br>
-                </li>
-                <li class="list-group-item">Goblin caves recolored to be slightly darker & less orange.
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/2.gif" width="750" height="312">
-                <br>
-                <br>
-                </center>
-                </li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> The Goblin song is retained in order to pay homage to the book, but it has been moderately trimmed to remove some of the weirdness (fist pumping, dancing in a circle, stepping on Goblins, and some dialogue). Directly after, the extended moments with the captured Dwarves is kept, with only small trims to the King's silly dialogue about Nori's stolen silverware. As always, I want the audience to see as much of each Dwarf as possible so we hopefully end up actually caring about them.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 5-->
-          <div id="chapter5" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">5. Riddles in the Dark</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">The first time we fully see Gollum close up is when he jumps out in front of Bilbo. He is not introduced earlier nor is he seen dropping the ring, leaving the origin of the ring a mystery to the audience (like the book) before we learn it was Gollum's.</li>
-                <li class="list-group-item">Gollum’s cave recolored to be slightly darker.
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/1.gif" width="750" height="312">
-                <br>
-                <br>
-                </center>
-                </li>
-                <li class="list-group-item">Cut all ridiculous combat techniques and set pieces throughout the Goblin escape chase, reducing the sequence from 4 minutes to just 1. Anything that was extremely unrealistic or physically impossible has been removed; this philosophy has been maintained for every action sequence throughout the fan edit.</li>
-                <li class="list-group-item">Goblin King does not return at the end nor does the Company slide down the entire cavern on a bridge.</li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 6-->
-          <div id="chapter6" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">6. Out of the Frying-Pan into the Fire</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/Frying.webp"></li>
-                <li class="list-group-item">Trimmed out Gandalf noticing Bilbo hiding the ring in his pocket. While Gandalf may be suspicious, he does not know for sure that Bilbo has a ring, which we will see him discover in <i>The Fellowship of the Ring</i>. Digitally altered the shot of the wargs arriving to remove Azog, originally a visual effect edit by /u/thechaptereditor.</li>
-                <li class="list-group-item">
-                <center>
-                <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLW8XF7AlGtdow02qF3bd8UeNpD2EXcHZNv-4Un-5b2jlznTh5RINoWKzlXauLmbq26Di4mbuDEjQpORdLPOfKGN2_JUdVpuqSz3Fbt2vzo-DoocpEz_MIbnqVT8MDITASq5BrPs5w7dZLgLwlxT6Rf7=w1920-h800-no?authuser=0" width="500" height="208">
-                </center>
-                <br>
-                With all shots of Azog removed, closeups of a generic Orc leader (taken from earlier in the film) have been repurposed here to sell the moment and compensate for the gaps. As pictured above, the shots have been tweaked to naturally fit into their new placement.
-                <br><br>
-                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/3HF4PX2Mtto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                <li class="list-group-item">Removed Bilbo killing a Warg to keep him as a non-warrior. Throughout this edit, he only ever struggles to fight one Goblin and then kills two spiders, mostly with the help of the ring or element of surprise. Other than these instances of combat, he uses his wits and brains to escape situations, like the book.</li>
-                <li class="list-group-item">Removed Thorin's charge with the Nazgul theme, as again, Azog is not present here. Instead, right as some of the Dwarves are about to fall, the Eagles arrive to save the day.</li>
-                <li class="list-group-item">New Eagle escape montage using the unused piece “Good Omen” to show their escape and progression. With this, removed the reuse of the Gondor theme that was in the original film.</li>
-                <li class="list-group-item">As Thorin was not wounded by Azog in my cut, the cuts  on his face have been removed using deep fake technology and his unconscious body seen on Carrock has been replaced with a rock.
-                <br><br>
-                <center>
-                <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLV1YLwkBb8HHe-ObsBpi-K5rDEhdcosgu1OySfxPCqQ4Q9FwmPLjnl7KYvcwJlH8FlJdTvh38oNtrlLk8FRoFsvDkcyFAMeF18Zovzll6KNmDpSsXa6Pv_SCyDzCOJKdYNOqoCxGOrAzbXOcOBIOSPe=w1280-h533-no?authuser=0" width="500" height="208">
-                &#160; &#160; &#160;
-                 <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLWByxAU7LTRoF_7jcnwhIJnrKKfaO18Gpz2JngsEqfGn7CwJxXWyp7_2TQX_zvg4ZXIOg5dNj9ocAlqJzuiGGtRZRNE-Nwu2S5h2U0L14yDkJxGHjjmCCkt_Aa-adj2YNBacc6XiRjPc0f7oSWNwUl2=w1280-h533-no?authuser=0" width="500" height="208">
-                </center>
-                <br>
-                </li>
-                <li class="list-group-item">Directly after Carrock, we cut to black and transition into the intermission. This makes for a perfect rest break that also covers up the time jump from <i>An Unexpected Journey</i> to <i>The Desolation of Smaug</i>, as we reflect on how far the Company has come and how far they still have to go.</li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 7-->
-          <div id="chapter7" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">7. Queer Lodgings</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/beorn.webp"></li>
-                <li class="list-group-item">Removed original <i>The Desolation of Smaug</i> opening with the Bree flashback and title screen. Instead, we cut right back to the Company after they have left Carrock, which according to Peter Jackson’s audio commentary is about six hours later.</li>
-                <li class="list-group-item">Rearranged the sequence where the Company discovers Beorn in the wild and runs through the forest towards his house to account for removing the presence of Azog and fixing some illogical geography.</li>
-                <li class="list-group-item">Removed Bilbo petting the ring in Beorn’s house, as any connection to Sauron or self corruption with the ring is kept to a complete minimum, with only a few music cue references throughout this edit.<br><i>This is both more accurate to the book and better for a tighter narrative that does not waste time on referencing future events. Instead, it allows the audience to experience a natural growing presence of evil that Gandalf discovers in The Fellowship of the Ring, giving more emotional weight to the moment when it comes to our surprise that the ring has changed Bilbo.</i></li>
-                <li class="list-group-item">Removed all references to Azog and the High Fells. Instead, all we learn is that the wild is crawling with Orcs and their numbers are growing, which we will see paid off when all the Orcs show up in the final battle.</li>
-                <li class="list-group-item">Removed the flash of Sauron’s eye in Mirkwood (along with all future instances of it) as well as Bilbo lying about the ring to Gandalf. These elements were more forced references to Sauron and the evilness of the ring.</li>
-                <li class="list-group-item">Gandalf finds a red marking in Mirkwood which sparks his decision to leave the company.<br><i>Most audiences won’t know this is referencing Sauron, they will only know that there is some unknown evil that needs investigating. It works well to keep this plot mysterious. That way, both stories can work on their own and Sauron is introduced in the story where he is relevant, not in The Hobbit.</i></li>
-                <li class="list-group-item">Gandalf departs and his entire side quest to the High Fells and Dol Guldur is removed, with him only returning right before the final battle to warn of an Orc army. That way, his disappearance still receives some form of explanation and weight, it was not for nothing.</li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> The book-inspired introduction to Beorn is kept, which brings some nice levity and charm. It also makes much more sense than the theatrical version where Beorn was instantly allowing hospitality. We also keep some minimal discussion about Orcs and the Necromancer between Beorn and Gandalf which help explain his departure from the company.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 8-->
-          <div id="chapter8" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">8. Flies and Spiders</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Small trims to remove any antagonism from Thorin towards Bilbo, as they should be building their friendship still.</li>
-                <li class="list-group-item">Inserted a repurposed and color corrected shot from a scene in the theatrical version showing how far off the path they are, rather than having the company wander off the path on purpose.<br><br>
-                <p style="text-align:center;"><img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/forest.webp" width="720" height="300" >
-                </li>
-                <li class="list-group-item">Cut Bilbo falling down after freeing the Dwarves. This originally led to him going crazy fighting a baby spider and worrying about losing the ring, which was not needed here.</li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/mirkwood.webp"></li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> The extended Mirkwood sequence which draws heavily from the book is kept, with the Enchanted River, White Deer, Bombur falling asleep, more wandering, and even some nice dialogue reminiscent of the text (absence of wind & "no end to this accursed forest!").</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 9-->
-          <div id="chapter9" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">9. Barrels Out of Bond</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">The Elves jump up out of hiding to capture the Dwarves rather than Legolas’s ridiculous original introduction. The moment is very reminiscent of the Fellowship entering Lothlorien and being surprised by Elves.</li>
-                <li class="list-group-item">Legolas makes his one minute cameo here, never to return for the rest of the movie. Tauriel is simply a background Elf warrior, as all of her scenes are removed. The love triangle is nonexistent in this fan edit.</li>
-                <li class="list-group-item">Small trims to remove Gimli fan service and Legolas calling the Elves of Gondolin his kin, as in the actual Tolkien lore he would not have.</li>
-                <li class="list-group-item">Added subtitle translation for Thorin’s Dwarvish insult to Thranduil so that the audience can better appreciate the struggle between both races, that Thorin wishes Thranduil's people would face the same downfall.
-                <center><img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLV8lQbzty1eXWudgSzejoSSvvlwmIMdexjNXb5ZdmyMfSPTjlY7qb26feW4zazVSX0K9QlvexzlYDrVyRaDjHzlu4Brvhg3ETuSdaQQ6WR5GQJqaTwj0ZWSutzSsWvuj7aFU4h1tNgvvMGma3sQ_se7=w647-h107-no?authuser=0" width="302" height="50">
-               </center><br>
-             Cut the second half of the Thorin and Thranduil scene to remove the weird “serpent mouth” transformation. Thus, Thranduil’s response to the insult is removed which originally gave context to it, giving even more reason for me to show the above translated subtitle.</li>
-                <li class="list-group-item">Inserted a line of dialogue where Thorin says <b>"I am sorry I've doubted you"</b> to Bilbo after being freed from the cells. This is from an earlier scene that had to be cut, but works great here to help naturally develop their friendship, especially because this was the point in the book where Thorin began respecting Bilbo. Thorin then orders the Dwarves to listen to Bilbo and compliments him once escaped. I think keeping their friendship at the forefront of this edit is key.
-                </li>
-                <li class="list-group-item">Recut and rescored the barrel escape so that no Orcs or Elves pursue the company, which not only makes the sequence closer to the book but also removes some of the most ridiculous CGI action.
-                </li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/barrels.webp"></li>
-                <li class="list-group-item"><b>Deleted Scenes Added:</b> Inserted two cut shots of Bombur sharing Elf food with Bifur, who then spits it out. These shots taken from the Appendices behind the scenes place some focus on the less popular Dwarves and help show that we have been bored in the cells for a while.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 10-->
-          <div id="chapter10" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">10. A Warm Welcome</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Removed Kíli's wound subplot and any reference to Orcs tracking them, as ever since we entered Mirkwood the pursuing Warg pack plotline has ended. As soon as the Dwarves get out of the barrels, Bard is waiting there ready to confront them. Painted over Kíli's face to make him look more warm and saturated rather than pale and sickly.</li>
-                <li class="list-group-item">New digitally altered shots to remove any arrows stuck to the barrels after the Dwarves get on land.</li>
-                <li class="list-group-item">The Master is now a minor character who is introduced when our characters run into him. Almost all of Alfrid is entirely removed, leaving him as a background character with only two lines.</li>
-                <li class="list-group-item">No Dwarves are left behind in Lake-town, it is assumed that the entire company leaves together.</li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/cold%20welc.webp"></li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> The extended walk through Lake-town is included to give the location more depth, but is abbreviated to remove the part where guards originally tried to capture the Dwarves. Consequently, there is no more sneaking through toilets - the Dwarves just enter Bard's house normally. We also keep part of Bilbo vouching for Thorin to help build their friendship, it feels earned especially after Thorin said several nice things to Bilbo during the escape from the Woodland Realm.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 11-->
-          <div id="chapter11" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">11. On the Doorstep</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Inserted a color adjusted shot from <i>The Battle of the Five Armies</i> showing Fíli, Kíli, Bofur, and Óin walking towards Erebor to help sell the illusion that all Dwarves are present.<br><br>
-                <center>Before / After <i>(Saturation and tint decreased to match gloomy mood of surrounding shots</i></center>
-                <p style="text-align:center;"><img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/oin%20walking.webp" width="720" height="300" >
-                </li>
-                <li class="list-group-item">Added digitally altered shot that shows all 14 members of the Company hiking to Erebor originally made for the Maple Films fan edit.</li>
-                <li class="list-group-item">Recut and rescored the secret door scene to remove the Dwarves giving up at the first sign of failure to make them seem more competent. Repurposed and regraded a couple shots of the Dwarves and Thorin to help suggest that they never left and were always there while Bilbo was figuring out the riddle.</li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/doorstep.webp"></li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> We get some additional dialogue from Balin & Bilbo outside the Desolation of Smaug wasteland.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 12-13-->
-          <div id="chapter12" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">12-13. Inside Information / Not at Home</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/dragon.webp"></li>
-                </li>
-                <li class="list-group-item">Smaug's lair recolored to be slightly darker.
-                <li class="list-group-item">Heavily recut the Smaug scene to remove all cutaways so that the entire sequence plays out continuously with just Bilbo and Smaug, no cuts to the Dwarves, Lake-town, or Dol Guldur.</li>
-                <li class="list-group-item">Slight rearrangement to get all the dialogue closer to the order that it was in the book, while also removing Smaug’s mention of “Oakenshield,” as that name was made long after the Dwarves fled Erebor.</li>
-                <li class="list-group-item">Removed the entire Dwarf chase sequence in Erebor to place the focus on Bilbo, remove unnecessary action, stick to the book, and most importantly make Smaug appear competent.</li>
-                <li class="list-group-item">I have retained as much of Smaug's dialogue as possible by rearranging lines, ensuring that not a single book reference or "good" line was cut. For example, lines Smaug says to Thorin in the movie that really should have been said to Bilbo have been repurposed.</li>
-                <li class="list-group-item">
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/smaug.gif" width="750" height="312">
-                <br>
-                <br>
-                </center>
-                New digitally altered shot to show Smaug breaking out of Erebor without being covered in liquid gold.<br><br>
-                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/1Dqhtd0Eb9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 14-->
-          <div id="chapter14" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">14. Fire and Water</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/firewater.webp"></li>
-                </li>
-                <li class="list-group-item">The edit seamlessly transitions from <i>The Desolation of Smaug</i> to <i>The Battle of the Five Armies</i> as Smaug begins to attack Lake-town.</li>
-                <li class="list-group-item">Footage is heavily rearranged and edited to depict the town in chaos as Bard fights against Smaug in a sequence that is more straightforward and faithful to the book.</li>
-                <li class="list-group-item">Bard kills Smaug without the help of his son Bain using new digitally altered shots removing him entirely.
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/bard.gif" width="750" height="312">
-                <br>
-                <br>
-                </center>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> Extended shots of Bard running through the town and almost getting killed, which helps flesh out the sequence and provide tension.</li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 15-->
-          <div id="chapter15" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">15. The Gathering of the Clouds</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Removed Bilbo pulling out the Arkenstone in broad daylight, along with the flashbacks to Smaug that never happened in my edit because Smaug never talked about Thorin or his corruption.</li>
-                <li class="list-group-item">Removed dragon sickness plot and made <b>many</b> small trims to Thorin’s character to downplay his craziness, instead giving him a slower and more natural descent into his excessive pride and stubbornness. This is both more book accurate and makes his character more interesting / relatable / sympathetic, rather than robbing him of his agency that it was "just the dragon sickness" making him bad.</li>
-                <li class="list-group-item">Gandalf finally shows back up after his long departure to warn everyone of Orcs coming. Cut the tent scene short to remove the discussion about Azog and Sauron’s master plan to stay in line with the scope of this story. The Orcs just want a piece of the Lonely Mountain after learning of Smaug's death like the other races, that's it.</li>
-                <li class="list-group-item">The Orcs march towards the Mountain with a redubbed subtitle giving context for why they want to attack (which is also mirrored again during the battle). Applied color correction to marching scene so it appears later in the day with a warmer reddish look that fits its new placement.<br><br>
-                <center><img class="card-img-fluid" class="default-image" width=500 height=181 src="https://lh3.googleusercontent.com/pw/AM-JKLVvoy7VrbD39xjOExu26XvQw5LERCIg-R7jbk8H-RjoGXzofb2hg4BjJ2ri12U3GtKIFs6DYXh_MEOuoXzMvrsBV0nctDccAGuBaqqEB9BEBq1v4NklFByLM0Jo0wXWDXXKqGas7kLnI4FrvpNWtQf2=w1000-h362-no?authuser=0"><br><br></center></li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/erebort.webp"></li>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 16-->
-          <div id="chapter16" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">16. A Thief in the Night</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/sneaking.webp"></li>
-                </li>
-                <li class="list-group-item">Bilbo delivers the Arkenstone to Bard/Thranduil and reunites with Gandalf, while Alfrid's presence has been entirely removed.</li>
-                <li class="list-group-item">This is the one moment in the entire edit where “dragon sickness” is mentioned, which I kept on purpose. It is spoken by Gandalf who is known for speaking in riddles/metaphors, and the dialogue contributes to his friendship with Bilbo, while also paying homage to the fact that the phrase "dragon sickness" was mentioned once in the book.</li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> The beautiful scene between Bifur & Bilbo is kept, which not only mirrors a scene from way earlier, but also sets up Bilbo's motivations for why he cares about the Dwarves: they are nice to him. Additionally, some extended dialogue in Dale is kept to communicate to the audience why Thranduil does not believe Gandalf is telling the truth about Orcs.</li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 17-->
-          <div id="chapter17" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">17. The Clouds Burst</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/battle.webp"></li>
-                </li>
-                <li class="list-group-item">A 55 minute battle has now been reduced to a much more straightforward and well-paced 18 minute battle sequence that also sticks to flow described on the book; the good guys start out winning, then start losing, then Thorin charges and instills hopes, they start losing again, and then finally they win it all when the Eagles show up and the Orc commander is killed. Meanwhile, Bilbo is knocked out about two-thirds of the way into the battle.</li>
-                <li class="list-group-item">Reverted to the theatrical version of Dáin's arrival to remove the Elf vs. Dwarf combat.</li>
-                <li class="list-group-item">New digitally altered shot that shows tunnels in the mountainside before the Orcs show up, hinting that they were recently dug.
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLUCNjuMuaSNbqxeoOYKlr8ZDApG4MEONBoM7C1q9A4Aoq7wDPYc070WL9tR0fWblVK5AYsYLoHRf7P6tcgU0szalcwlPghZIKAQb03OEN3oGjso5FRzqY-WxXbbKYExaoU5-3ZtwDaDaLeOBknxzcAd=w1920-h800-no?authuser=0" width="500" height="208">
-                <br>
-                <br>
-                </center>
-                </li>
-                <li class="list-group-item">Recut Azog’s introduction to remove the Wereworms and instead have his horn be the sound that draws everyone’s attention to his introduction.</li>
-                <li class="list-group-item">Removed wacky design moments and set pieces, including no more catapult trolls, battering ram trolls, peg-leg trolls, etc.</li>
-                <li class="list-group-item">Removed the subplot of Bard and his children. Bard is now just the commander of the Men.</li>
-                <li class="list-group-item">New sequence with rescored soundtrack & rearranged footage to depict Bilbo slipping away from the battle like in the book as he is not a warrior. However, he only fully retreats in the "sad montage" when the good guys are clearly losing, justifying his actions. Regardless of the book, I still found this much more plausible than showing an untrained Bilbo suddenly able to hold his own against multiple massive Orcs in full-armor. </li>
-                <li class="list-group-item">Thorin returns to the battle after Dwalin leaves him at a loss for words, the focus is brought back to Thorin's own actions and not just a dragon sickness inflicted upon him. This moment comes naturally as so many tweaks have been done to Thorin's character to reduce his craziness, it feels like he really just did have a change of heart after realizing his mistakes now.</li>
-                <li class="list-group-item">As Bilbo is far away from the battle and not in Dale anymore, we do not see him react to Thorin’s charge. Instead, a repurposed shot of Bard has been inserted when the horn of Erebor sounds right before Gandalf reacts. Slow motion applied and audio adjusted to fit right in.
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLXcrupJR0iKZCxqff1ah-e1G50J-8vXN61tQ6xG-MNB6mGXRXoX33yIMjUC6ibCpxDu2sdRbBCneN6vc4qha3YxxrMNZ3H7zk9VCCeJZjv1YVhOQqajJ4i64g3HAU6qcFdsj3JM0dpHn0eNfig4SWyk=w1280-h534-no?authuser=0" width="500" height="208">
-                <br>
-                <br>
-                </center>
-                </li>
-                <li class="list-group-item">Bilbo has found his way into Ravenhill, but is suddenly swarmed by bats and knocked out by an Orc, before fading to black. New visual effect to show him re-appearing with his ring off. Background has been digitally altered to remove Dwalin, as Bilbo is supposed to be in Ravenhill by himself at this point.</li>
-                <li class="list-group-item">Next begins an action montage using the "Misty Mountains" theme while we see the Company fight all together against the Orcs. Dáin/Thorin embrace and we see Thorin decide the Orc leader must be killed. Spliced in some shots of Gandalf narrating to help smooth the flow.</li>
-                <li class="list-group-item">Now only Fíli, Kíli, and Thorin go to Ravenhill to try to kill Azog. Bilbo is knocked out, and Dwalin is not present as it created a loose end when Thorin died alone.</li>
-                <li class="list-group-item">Fíli’s death is relatively the same with only a redubbed subtitle, as Azog has no clue about the family structure of Durin's folk in this cut. Kíli is now just killed by an unknown Orc while trying to fight to defend Thorin, with Tauriel not involved.<br><br>
-                <center><img class="card-img-fluid" class="default-image" width=500 height=151 src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/subs.webp"><br><br></center></li>
-                <li class="list-group-item">Thorin’s final duel has been shortened and the part where Azog fell under the ice and jumped back up has been removed. It was not necessary to have such a drawn out showdown when the build up to this fight has been substantially reduced, and you could also argue it went on too long in the originals.</li>
-                <li class="list-group-item">After Thorin's nephews both die, Orc reinforcements and war bats show up as we are brought to another ultimate low. A montage of the good guys losing again highlights that war is not glorious, as Bilbo discusses in the book.</li>
-                <li class="list-group-item">Eagle scene recut to remove Radagast as well as digitally erase him from one of the shots.
-                <center>
-                <br>
-                <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLWCymNKTTKU0roD6HfjP0CA-6J1pmseKZ61LbacJS9zRHU9fi82PELfMfGvROSmed15AfbxFId-rzZhpJCCJByAjBfxrc7G2u19axivDcQrWbGnNEOPkbfKvR4Cbh2sk59P4SKJzSyvFuCcFBUul3wi=w1920-h800-no?authuser=0" width="500" height="208">
-                <br>
-                <br>
-                </center>
-                </li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> Thorin has an additional piece of dialogue at the gate which mirrors the book and we also get another line from Gandalf. At the start of the battle, we see more of the Dwarf army and Thranduil/Dáin fighting, which aids in maintaining the pacing of the battle to account for all the intolerable action I have cut. After Thorin's final charge, we also see some extended clips of the Company fighting Orcs during the rescored "Misty Mountains" montage, and then a few more extended seconds of Beorn fighting at the end.</li>
-                <li class="list-group-item"><b>Deleted Scenes Added:</b> Dwalin's cut line of dialogue in the throne room where he said "Bilbo is right" has been re-inserted, sourced from the film's trailer. This adds more emotional weight and increases Bilbo's role in the battle and Thorin's redemption.</li>
-              </ul>
-            </div>
-          </div>
-          <!--Chapter 18-19-->
-          <div id="chapter18" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">18-19. The Return Journey / The Last Stage</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Thranduil’s conclusion is a repurposed and recut scene from earlier in the movie, previously highlighting his motivations to retreat, but now being used as a scene where he reflects on the casualties of war. This is impactful because his fellow Elves would have lived forever if it were not for the battle, perhaps it was not worth it. Thranduil is an intentional mirror to Thorin, both prideful kings who conflict with others, suffered greatly, and grew in the end.</li>
-                <li class="list-group-item">Restructured dialogue in the Bilbo and Gandalf departure scene to reflect the dialogue in the book almost one-to-one. Additionally, this means Gandalf does not mention the ring because he still has no idea Bilbo has it (even if he is suspicious), we see him discover the ring in <i>The Fellowship of the Ring.</i></li>
-                <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/shire.webp"></li>
-                </li>
-                <li class="list-group-item"><b>Extended Scenes Kept:</b> Thorin's funeral is included.</li>
-                <li class="list-group-item"><b>Deleted Scenes Added:</b> Gandalf's cut eulogy audio found in the Appendices behind the scenes has been re-inserted, adding even more emotional weight to this scene.</li>
-                <li class="list-group-item"><b>End Credits:</b> Sourced from <i>An Unexpected Journey</i>, but edited to reflect the starring cast of all three films together, along with the full cast of side characters that were visible in my edit. Renamed credit listing for “Azog” to “Bolg” as a little homage to the book, as the name "Azog" is no longer spoken. New main credit music “Misty Mountains Cold” by Clamavi De Profundis with their names added to the credits.</li>
-              </ul>
-            </div>
-          </div>
-          <!--Special Features-->
-          <div id="special" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">Special Features</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">While many flashbacks and sideplots were cut, a lot of footage had potential to be enjoyable in its own right and was decently accurate to the Tolkien lore as described in his other works outside of <i>The Hobbit</i>. All material has been edited under the same philosophies as the main feature. Consistent visual changes applied.
-<center> <br>
-  <img class="card-img-fluid" class="default-image" width=640 height=360 src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/special.webp"></center>
-                </li> 
-        <li class="list-group-item">I have created my own <b>"Durin's Folk"</b> 3-part series of flashbacks that focuses on Thorin & the Dwarves, giving both more depth to his character and general historical context. These sequences did an adequate job of adapating Tolkien's lore, specifically from <i>The Lord of the Rings</i> Appendices.</li>
-                <li class="list-group-item">I have also created my own <b>Deleted Scenes</b> reel that includes scenes with <b>The White Council</b>, the attack on <b>Dol Guldur</b>, and more of Thorin.</li>
-              </ul>
-            </div>
-          </div>
-      <!--Downloads-->
-          <div id="downloads" class="col mt-3">
-            <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">Downloads</h2></div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-<center>
-
-
-<a href="https://drive.google.com/drive/folders/1Fxh3Y3sJI8jniBwGyBGvN5l-uzCXJRoX?usp=drive_link" target="_blank" class="button button1" title="Main project folder">Download - All Files</a>
-<a href="magnet:?xt=urn:btih:fe2f0cfbcd8d6f062dc5273db43580e0c58470e3&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20%28Blu-ray%20ISO%20discs%29&tr=http%3A%2F%2Fhobbit.zapto.org%3A9000%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce
-" target="_blank" class="button button1" title="A faster way to download the ISO release" >Download - ISO Torrent</a>
-
-<a href="magnet:?xt=urn:btih:b8da3e6c5341ab5b5c47e025b4fb1d1c039e44c2&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(1080p).mkv" target="_blank" class="button button1" title="A faster way to download the 1080p release" >Download - 1080p Torrent</a>
-
-<a href="magnet:?xt=urn:btih:332a50861db01b297a312de0eecf5b7734c4b7e2&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(720p).mp4" target="_blank" class="button button1" title="A faster way to download the 720p release" >Download - 720p Torrent</a>
-<br>
-<i>You need to download a torrent client if you wish to download via torrenting. If you are struggling, read the FAQ document inside the first link.</i>
-</center>
-                </li>
-
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Blu-ray ISOs [35-40 GB per disc]</b>
-          <ul>
-          <li>1080p Highest Quality [30mbps CBR]
-          <li>Audio:
-            <ul>
-            <li>Main: 5.1 DTS-HD Master Audio
-            <li>Alternate: DTS Core
-            <li>Bonus: 2.0 Dolby Digital AC-3 [Editor's Commentary Track]
-            </ul>
-          <li>Chapters: Built in
-          <li>Subtitles: Built in [English only]
-          <li>Special features, motion menus, chapter selection, and set up page
-          </ul>
-                </li>
-                <li class="list-group-item"><b>MKV [25 GB]</b>
-          <ul>
-          <li>1080p High Quality [11mbps VBR]
-          <li>Audio:
-            <ul>
-            <li>Main: 5.1 DTS
-            <li>Alternate: 5.1 Dolby Digital AC-3
-            <li>Bonus: 2.0 Dolby Digital AC-3 [Editor's Commentary Track]
-            </ul>
-          <li>Chapters: Built in
-          <li>Subtitles: Built in [All available languages]
-          </ul>
-        </li>
-                <li class="list-group-item"><b>MP4 [8 GB]</b>
-          <ul>
-            <li>720p Medium Quality [4mbps VBR]
-            <li>Audio: 5.1 AAC
-            <li>Chapters: Built in
-            <li>Subtitles: Must download individually
-            <li>iTunes compatible with proper metadata
-          </ul>
-                </li>
-        <li class="list-group-item">
-        <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/bluray_black_new-art-1.webp" alt="The Hobbit Book Accurate" >
-              </li>
-              <li class="list-group-item"><b>Subtitle Languages:</b> English [Closed Captions], English, Bulgarian, Chinese (Simplified), Czech, Dutch, French, German, Greek, Italian, Norwegian, Polish, Portuguese (Brazilian), Slovenian, Spanish, Swedish, Dwarvish, Translating Template</li>
-          <li class="list-group-item"><b>Special Features [Included in ISO disc version]</b>
-          <ul>
-            <li><b>Bonus Scenes:</b> As described above, flashbacks/scenes that didn't make the cut but were still interesting nonetheless.
-            <li><b>Editors Audio Commentary:</b> Alternate audio track on the full film and all special features discussing every change made I talk not just about where changes were made, but also why and how they were done. <i>Commentary is also accessible on the MKV release.</i>
-            <li><b>Music:</b> “Misty Mountains” & “Blunt the Knives” playable from the menu in their full studio quality.
-            <li><b>Release Trailer:</b> Promotional trailer in the style of <i>An Unexpected Journey</i>'s trailer, except as if it was for a single film.
-            <li><b>Behind the Scenes:</b> A recording of what the project looks like in my editing software, over viewing how everything was put together and some of my common techniques.
-          </ul>
-          </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="d-none d-lg-block col-2"></div>
-    </div>
-    <footer class="text-center m-2">
-      <a href="https://www.youtube.com/c/m4studios" style="color: #5e5e5e;">M4 Studios</a>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-      <script type="text/javascript">
-        $('.slider').slider();
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>M4's "The Hobbit" Fan Edit – Tolkien Inspired Fan Edit of Peter Jackson's Trilogy</title>
+      <meta name="description" content="The M4 edit recuts Peter Jackson's The Hobbit film trilogy into a single movie that follows J.R.R. Tolkien's book more closely. New VFX, color grading, and more.">
+      <meta name="keywords" content="hobbit, tolkien, fan edit, book accurate">
+      <meta name="author" content="M4 & some code inspired by Caleb Gamman">
+      <link rel="canonical" href="https://m4studios.github.io/hobbit-book-edit/">
+      <meta name="theme-color" content="#e0d7d3">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://m4studios.github.io/hobbit-book-edit/">
+      <meta property="og:title" content="M4's The Hobbit Fan Edit – Tolkien Inspired Recut">
+      <meta property="og:description" content="The M4 edit recuts Peter Jackson's The Hobbit film trilogy into a single movie that follows J.R.R. Tolkien's book more closely.">
+      <meta property="og:image" content="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp">
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:url" content="https://m4studios.github.io/hobbit-book-edit/">
+      <meta name="twitter:title" content="M4's The Hobbit Fan Edit – Tolkien Inspired Recut">
+      <meta name="twitter:description" content="The M4 edit recuts Peter Jackson's The Hobbit film trilogy into a single movie that follows J.R.R. Tolkien's book more closely.">
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp">
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "CreativeWork",
+           "name": "M4's The Hobbit Fan Edit",
+         "description": "A fan edit that recuts Peter Jackson's Hobbit trilogy into a single movie that follows J.R.R. Tolkien's book more closely.",
+           "url": "https://m4studios.github.io/hobbit-book-edit/",
+           "image": "https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp",
+           "author": {
+             "@type": "Person",
+             "name": "M4",
+             "sameAs": [
+         "https://ifdb.fanedit.org/m4s-the-hobbit-book-edit",
+         "https://www.youtube.com/c/m4studios",
+         "https://originaltrilogy.com/topic/the-hobbit-m4-book-edit-released/id/79411/"
+         ]
+         
+           }
+         }
       </script>
-  </body>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <script src="../imgslider.js"></script>
+      <link type="text/css" href="../neumorphism.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="../fixingstyles.css">
+      <link rel="stylesheet" href="../lite-yt-embed.css" />
+      <script src="../lite-yt-embed.js"></script>
+      <meta name="robots" content="index, follow">
+      <style>
+         body
+         {
+         position: relative;
+         font-family: Georgia;
+         }
+         .toc{
+         color:#212529;
+         text-align: left;
+         font-weight: normal;
+         background-color: #f3f3f3;
+         }
+         .nav-link.active{
+         font-weight: 500;
+         }
+         .nav-link.badge.toc.rounded-pill.active {
+         background-color: #AF4D50;
+         }
+         .nav-link:hover {
+         color: #AF4D50; /* Replace with the desired color on hover */
+         }
+         .list-group-item img.default-image {
+         max-width: 100%; /* Adjust the maximum width as needed */
+         height: auto; /* Maintain the aspect ratio */
+         }
+         .list-group-item img.exclude-image {
+         max-width: 50%; /* Adjust the maximum width as needed */
+         height: auto; /* Maintain the aspect ratio */
+         }
+         .dif-font {
+         font-family: "Arial"  !important; /* Override the font for this class */
+         }
+         h1, h2, h3, h4, h5, h6 {
+         font-weight: bold;
+         }
+         .col.mt-3 {
+         box-shadow: 0 1px 8px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
+         }
+         .card .card-img.special {
+         border-radius: 0; /* Set border-radius to 0 to remove rounded edges */
+         }
+         .navbar-square {
+         background-color: #CEB9B9; /* Choose your desired background color */
+         border-radius: 10px; /* Adjust the border-radius for rounded edges */
+         height: 101%; /* Cover the full height of the navbar */
+         width: 205px; /* Adjust the width of the background square */
+         position: absolute;
+         left: 0;
+         top: 1;
+         z-index: -1; /* Move the square to the background */
+         box-shadow: 0 1px 8px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
+         }
+         .nav-link {
+         padding-bottom: 5px; /* Adjust to match the height of the square */
+         }
+         .indented-paragraph {
+         text-indent: 3em; /* Adjust the indentation to your preference */
+         padding: 3px; /* Adjust the padding to your preference */
+         }
+         .card {
+         overflow: hidden; /* Hide content that overflows the card */
+         }
+         .button {
+         font-family: "Verdana"  !important; /* Override the font for this class */
+         border: none;
+         padding: 16px 16px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 20px;
+         transition-duration: 0.4s;
+         cursor: pointer;
+         box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
+         font-weight: bold
+         }
+         .button1 {
+         background-color: #BB4949; 
+         color: #EBEBEB
+         }
+         .button1:hover {
+         background-color: #FEE8AA;
+         color: black 
+         }
+         .container {
+         display: flex;
+         }
+         .video, .image {
+         margin: 0 10px; /* Adjust margin to add space between video and image */
+         margin-right: 150px; /* Adjust margin to move the image to the left */
+         }
+         .video iframe {
+         object-fit: cover; /* Maintain aspect ratio and cover the container */
+         }
+         .image img {
+         width: 85%;
+         height: auto
+         object-fit: cover; /* Maintain aspect ratio and cover the container */
+         margin-left: 150px; /* Adjust margin to move the image to the left */
+         }
+         @media (max-width: 576px) {
+         .indented-paragraph {
+         display: none; /* Hide the paragraph on mobile */
+         }
+         .video, .image {
+         margin: 0 0; /* Adjust margin to add space between video and image */
+         margin-right: 0; /* Adjust margin to move the image to the left */
+         }
+         .image img {
+         width: 100%;
+         height: auto
+         object-fit: cover; /* Maintain aspect ratio and cover the container */
+         margin-left: 0; /* Adjust margin to move the image to the left */
+         }
+         }
+      </style>
+      <!-- ****** faviconit.com favicons ****** -->
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+      <link rel="icon" type="image/png" sizes="196x196" href="favicon-192.png">
+      <link rel="icon" type="image/png" sizes="160x160" href="favicon-160.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+      <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+      <link rel="apple-touch-icon" href="favicon-57.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="favicon-114.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="favicon-72.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="favicon-144.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="favicon-60.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="favicon-120.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="favicon-76.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="favicon-152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+      <meta name="msapplication-TileColor" content="#FFFFFF">
+      <meta name="msapplication-TileImage" content="favicon-144.png">
+      <meta name="msapplication-config" content="browserconfig.xml">
+      <!-- ****** faviconit.com favicons ****** -->
+   </head>
+   <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="200" data-bs-method="auto" style="background-color:#e0d7d3;">
+      <div class="row g-0">
+         <div class="col-7 col-sm-5 col-md-4 col-lg-2">
+            <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light p-3 pb-0 sticky-top d-none d-sm-block">
+               <div class="container-fluid">
+                  <div class="navbar-square"></div>
+                  <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                     <div class="navbar-square"></div>
+                     <nav class="nav nav-pills flex-column justify-content-start">
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#m4hobbit"><b>M4's <i>The Hobbit</i> Book Edit</b></a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#goals"><b>Goals & Editing Information</b></a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#overall"><b>Overall Changes</b></a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter1">1. An Unexpected Party</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter2">2. Roast Mutton</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter3">3. A Short Rest</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter4">4. Over Hill and Under Hill</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter5">5. Riddles in the Dark</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter6">6. Out of the Frying-Pan<br>into the Fire</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter7">7. Queer Lodgings</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter8">8. Flies and Spiders</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter9">9. Barrels Out of Bond</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter10">10. A Warm Welcome</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter11">11. On the Doorstep</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter12">12-13. Inside Information /<br>Not at Home</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter14">14. Fire and Water</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter15">15. The Gathering of the Clouds</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter16">16. A Thief in the Night</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter17">17. The Clouds Burst</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#chapter18">18-19. The Return Journey /<br>The Last Stage</a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#special"><b>Special Features</b></a>
+                        <a class="nav-link badge toc rounded-pill dif-font" href="#downloads"><b>Downloads</b></a>
+                     </nav>
+                  </div>
+               </div>
+            </nav>
+         </div>
+         <div class="col-lg-8 pb-5 px-2">
+            <div class="container-fluid">
+<!--The Hobbit M4 Book Edit-->
+<div id="m4hobbit" class="col mt-3">
+  <div class="card neumorphstatic">
+    <div class="position-relative ratio" style="--bs-aspect-ratio: 40%">
+      <img class="card-img special default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-fan-edit-tolkien.webp" alt="The Hobbit Tolkien Fan Edit Recut">
+      <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+        <h1 class="display-2 mb-0 text-white neumorphtext" style="font-weight: bold !important; line-height: 1;">
+          <br class="d-none d-sm-block">
+        </h1>
+      </div>
+    </div>
+
+    <center>
+      <li class="list-group-item">
+        A fan edit that combines Peter Jackson's <i>The Hobbit</i> trilogy into a more captivating faithfully adapted single-movie experience.
+      </li>
+      <br>
+      <b>HD 1080p&ensp;|&ensp;DTS 5.1 Surround Sound&ensp;|&ensp;New Visual Effects&ensp;|&ensp;Color Grading&ensp;|&ensp;Revised in 2024</b>
+    </center>
+    <br>
+
+    <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/the-hobbit-m4-book-edit.jpg" alt="The Hobbit Fan Edit">
+      </div>
+      <div class="video">
+        <p class="indented-paragraph">
+          I felt these films had "too much," whether it was all the added sideplots, action, new characters, or even the CGI. As a huge fan of J.R.R. Tolkien's book, I decided to edit these movies down to match closer to what was written while also rectifying many common critiques. This project is for both the purist and casual fans alike, with the end result providing a more focused narrative that I find more enjoyable and emotionally impactful.
+        </p>
+        <p class="indented-paragraph">
+          I initially edited with the book at my side, page by page, starting on June 19th, 2019. After numerous revisions to make the edit seamless for general audiences and feel as professional as possible, I finished on December 24th, 2021. I also worked on two last revisions, one in September of 2023 and one released in June of 2024, where I am now fully satisfied with the cut after many years of work.
+        </p>
+      </div>
+    </div>
+
+<!-- Responsive YouTube videos at half-width -->
+<div class="d-flex justify-content-center">
+  <div class="ratio ratio-16x9" style="max-width: 50%;">
+    <iframe src="https://www.youtube.com/embed/5ZKmXqXxtVc?si=QU1NUo1l6UQ86nmO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center mt-3">
+  <div class="ratio ratio-16x9" style="max-width: 50%;">
+    <iframe src="https://www.youtube.com/embed/Gm2CDRDPJmU?si=_Nwn7QcnAGGymuBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+    <li class="list-group-item">
+      <center>
+        <a href="https://ifdb.fanedit.org/m4s-the-hobbit-book-edit"><b>IFDb Approval</b></a> <b>&ensp;|&ensp;</b> 
+        <a href="https://originaltrilogy.com/topic/the-hobbit-m4-book-edit-released/id/79411"><b>OriginalTrilogy Thread</b></a> <b>&ensp;|&ensp;</b>
+        <a href="https://youtube.com/playlist?list=PL2NncXI-rDFqVnYeKEWGEEhGwmNktjWRi"><b>Community Media</b></a> <b>&ensp;|&ensp;</b>
+        <a href="mailto:thelastlight2941@protonmail.com" title="thelastlight2941@protonmail.com"><b>Email Contact</b></a> 
+        <br><br>
+        <h4><a href="https://discord.gg/CwNtGphfCZ"><b>Questions, comments? Join my Discord!</b></a></h4>
+        <h2 class="pt-2">ATTENTION - October 2025</h2>
+        <p>
+          I have transitioned my website domain to this website at "m4studios", as I have lost my ability to edit the old website at "m4-studios" with a dash. The old website will be hidden. The new URL will always be here, at <a href="https://m4studios.github.io/hobbit-book-edit/">m4studios.github.io/hobbit-book-edit</a>.
+        </p>
+      </center>
+    </li>
+  </div>
+</div>
+<!--Editing Goals-->
+
+               <div id="goals" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">Goals & Editing Information</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>1) Be more faithful to <i>The Hobbit</i> by J.R.R. Tolkien</b> while still retaining Peter Jackson’s cinematic Middle-earth vision in the areas where it shined. Includes making the story focus on Bilbo, the main quest, and decreasing the numerous references to <i>The Lord of the Rings</i>, allowing both stories to stand on their own.</li>
+                        <li class="list-group-item"><b>2) Consistent tone</b> as the story progresses from its lighthearted beginning to more serious ending. With this, display a convincing atmosphere with more realistic action, physics, and visuals. This aids in forming a more natural transition from <i>The Hobbit</i> to <i>The Lord of the Rings</i> despite the different scope of each story.</li>
+                        <li class="list-group-item"><b>3) Execute with professional film editing techniques</b>, specifically with making smooth audio transitions, maintaining a proper surround sound mix, and keeping intact the pacing, character arcs, and story structure. Work with lossless sources and avoid any unnecessary quality loss.</li>
+                        <li class="list-group-item"><b>4) Stay in Middle-earth as long as possible</b> with our beloved characters, meaning all available footage (theatrical, extended, and deleted) has been considered. Cutting characterization or book-accurate moments just for the sake of runtime is avoided. Hence, <b>this fan edit is categorized as its own "Extended Edition"</b> to justify the runtime just like how <i>The Lord of the Rings</i> had its own extended cuts. Theoretically, my cut could be further trimmed to a "theatrical" runtime, which is what would have been shown in theaters if this version was official.</li>
+                        <li class="list-group-item"><b>5) Appeal to general audiences</b> by still being a cohesive and cinematic film experience despite closer adherence to the book. New fans should also be able to enjoy this edit without any prior knowledge of Middle-earth books or films. </li>
+                        <li class="list-group-item">
+                           <b>Sources:</b>
+                           <ol>
+                              <li><i><b>An Unexpected Journey</b></i> (Footage retained: 1 hour 43 min.) &#160;|&#160; 40% cut
+                              <li><i><b>The Desolation of Smaug</b></i> (Footage retained:  1 hour 13 min.) &#160;|&#160; 58% cut
+                              <li><i><b>The Battle of the Five Armies</b></i> (Footage retained: 1 hour 9 min.) &#160;|&#160; 55% cut
+                           </ol>
+                        </li>
+                        <li class="list-group-item">
+                           <b>Editing Resources:</b>
+                           <ul>
+                              <li>Adobe Premiere, Adobe Photoshop, Adobe Encore, DTS-HD Master Audio Suite, Audacity, Subtitle Edit, MediaInfo, MakeMKV, FFmpeg
+                              <li>Howard Shore’s <i>The Hobbit Original Motion Picture Soundtracks</i> (Special Editions) [CDQ]
+                              <li>Howard Shore's <i>The Hobbit - The Complete Recordings</i> (Fan Project)
+                              <li><i>The Hobbit</i> Appendices
+                              <li>Various free & self-recorded sound effects
+                           </ul>
+                        <li class="list-group-item">
+                           <b>Additional Credit:</b>
+                           <br>
+                           Originally a solo project, but these individuals reached out to help fix continuity in several parts of the cut.
+                           <ul>
+                              <li>Eric Odmyr - digital alterations <i>(shown above)</i>
+                              <li>Michael Sinclair - digital alteration <i>(chapter 4)</i>
+                           </ul>
+                        <li class="list-group-item"><b>Runtime:</b>
+                           <br>
+                           <i>The Hobbit</i> – 256 Mins. (4:05 hours without credits) &#160;|&#160; 51% cut out of the original 8 hours 19 minutes
+                           <br>With the extended <i>Lord of the Rings</i> films at 228, 235, and 263 minutes respectively, I feel this fits right in. 
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Overall Changes-->
+               <div id="overall" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">Overall Changes</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           All three <b>Extended Edition Hobbit films</b> ripped from the official 1080p Blu-rays and <b>combined into one movie</b>, with <i>An Unexpected Journey</i> being the first half and <i>The Desolation of Smaug</i> & <i>The Battle of the Five Armies</i> covering the second half.
+                           <ul>
+                              <li>On the digital versions, the movie is split with a short “Intermission.”
+                              <li>
+                                 On the Blu-ray version, the parts are split by disc with an “Insert next disc” screen.
+                                 <br>
+                                 <br>
+                                 <center>
+                                    <img height="200" class="card-img-fluid"  class="exclude-image" src="https://lh3.googleusercontent.com/pw/AM-JKLVl1BO8DzJubS-Bj7b_S9cPs9X161M0hrLoMDwFpBn6BmVHz5gwp6OtqLLP17cxZ3tyroalC_hgaKfiKhd5rBy88bcmRzYPx17dk88LSfHzP2fAvMC_-nYiKftLFOqVBclA1-v453Vl41RqRjC3gILA=w1440-h600-no?authuser=3"> 
+                                 </center>
+                           </ul>
+                        </li>
+                        <li class="list-group-item">
+                           <b>Subtle visual changes to make the films look more natural</b> and match closer with <i>The Lord of the Rings</i> films. While <i>The Hobbit</i> still deserves its own visual direction (it is a different type of story than the following trilogy), I still felt like the original look felt off:
+                           <ul>
+                              <li>Applied a 35mm film grain overlay throughout the entire edit to reduce the digital look.
+                              <li>Reduced saturation/vibrancy and highlights where necessary to tone down the original color grading, offering a more natural look that also blends all three films together.
+                              <li>Reduced green levels and bumped up the reds/blues to remove the subtle green tint that varied throughout the original films, for both reasons described above.
+                           </ul>
+                           <center>
+                              <!--                 <br>
+                                 <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/greentint1_1.gif" width="750" height="312">
+                                 <br>
+                                 <br> -->
+                           </center>
+                        </li>
+                        </li>
+                        <li class="list-group-item">
+                            Book chapters in the film are now reflected with their respective movie portion, indicated by the chapter stops. I read the book while editing to make sure I could stay as faithful as possible, all while still respecting the limitations described in my editing goals.
+                            <br><br>
+                            <center>
+                                <i>There are several hundred changes in this project (big and small) that you can read about in the document within the download link, below is just a summary of the main changes in each chapter.</i>
+                            </center>
+                        </li>
+                        </center>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 1-->
+               <div id="chapter1" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">1. An Unexpected Party</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           The “Sack of Erebor” flashback has been cut, leaving only a short prologue with old Bilbo, now beginning with <i>“In a hole in the ground...”</i> All Frodo dialogue has been removed, instead leaving him with only a short visual cameo. After just a few minutes, we begin the main story of young Bilbo, cutting past the original film title screen as this edit is only titled <i>The Hobbit</i>.
+                           <center><br>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/GlWReFMmk4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </center>
+                        </li>
+                        <li class="list-group-item">"Blunt the Knives" songs is retained but slightly trimmed to remove some of the most ridiculous CGI plate tricks.</li>
+                        <li class="list-group-item">Small trims to remove some of the most excessively silly moments. Because the book had its share of silly moments&mdash;usually witty/ironic/charming and not immature&mdash;my philosophy was to try to remove humor that went too far while keeping humor that was either in the book or did it justice and deserved to stay. Examples that were cut here include Ori’s gross loud burp, Bombur “eating cheese by the block,” or shoving an axe up Smaug's "jacksy."
+                        <li class="list-group-item">
+                           <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/party.webp">
+                        </li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> Most of the Shire market scene with Bilbo is kept to give us more time with him and the Hobbits so we can appreciate the contrast in lifestyle once we enter the wild. I also have included some extra Dwarf characterization for Óin/Bifur and Thorin/Balin, as I want the audience to connect with each of the Dwarves as much as possible now that the movie's focus is brought back to the main quest.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 2-->
+               <div id="chapter2" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">2. Roast Mutton</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Removed the Moria flashback with Azog & Thorin as Bilbo is kept the centerpiece of the story. In fact, Azog is not seen or referenced until <i>The Battle of the Five Armies</i> portion where he is introduced as a nameless Orc villain.</li>
+                        <li class="list-group-item">When the Company hears Orcs at night it serves as foreshadowing for when an Orc pack shows up to attack them later after the Goblin caves.</li>
+                        <li class="list-group-item">Removed Radagast entirely from the film, instead leaving just a few of Gandalf's references to his existence for the sake of world building.</li>
+                        <li class="list-group-item">Trimmed some of the most excessive silly moments or dialogue in the Troll sequence, staying in line with my editing philosophy regarding humor.</li>
+                        <li class="list-group-item">
+                           <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/Trollshaws.webp">
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 3-->
+               <div id="chapter3" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">3. A Short Rest</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Instead of Radagast showing up after the Troll cave and leading into the ensuing Warg chase, the music transitions into a new hiking montage using footage taken from later in the film showing the Company progress through the wild.</li>
+                        <li class="list-group-item">As always, removed the most offending silly moments, including cutting the Elf-Dwarf romance jokes and some other moments that went too far.</li>
+                        <li class="list-group-item">The White Council scene is cut and an abbreviated version can be found on my Special Features. As soon as Elrond and Gandalf walk off at night, we cut away with a new music transition to various establishing shots of Rivendell in the morning with Bilbo (who no longer finds the Shards of Narsil). The heavy handed connections to <i>The Lord of the Rings</i> films throughout <i>The Hobbit</i> films felt out of place and unnecessary from my perspective, especially considering my goal of being accurate to the book. As such, I have cut back on the fan service and instead let the audience enjoy connections between the two stories through more subtle references.
+                        </li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/Rivendell.webp"></li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> All of the Rivendell extended material pertaining to Bilbo & the quest is kept. We get more dialogue with Gandalf/Bilbo before they enter the valley, a well-needed discussion between Gandalf/Elrond to explain the grander purpose of this quest, and a beautiful scene with Elrond/Bilbo which not only introduces their friendship, but also sets up Bilbo's motivations as he enters into the Misty Mountains.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 4-->
+               <div id="chapter4" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">4. Over Hill and Under Hill</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/over%20hill.webp">
+                        </li>
+                        <li class="list-group-item">Using the remaining hiking footage, as some was used earlier, the Dwarves enter the Misty Mountains while the most triumphant part of the Misty Mountains theme plays.</li>
+                        <li class="list-group-item">Cut all Stone Giants, now Bilbo simply falls due to the slippery rocks and the distracting lightning. He is rescued and the following characterization with Thorin remains intact. While Stone Giants were briefly mentioned in the book, I consider the sequence itself ridiculous and their portrayal wildly inaccurate.</li>
+                        <li class="list-group-item">
+                           Digitally altered a repurposed shot of the Dwarves to fix continuity, as they are supposed to turning their heads to look over at Bilbo.
+                           <br>
+                           <center><i>Can you spot the difference?</i></center>
+                           <br>
+                           <center>
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLWlNgFsKSmB5EeBj6GpuWu2Hbl889KqATOGVDSGRcGxDWizALJu7w3GL8sQl3M3GKWPJPiaYE2ouPe21eiCOeekmATb5S3vJha0VHelz5FOIIg-5udMCRGHilo9IqJIn22enB3lSvyQg4_zMaS86YV7=w1920-h800-no?authuser=0" width="500" height="208">
+                              &#160; &#160; &#160;
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLW03DZwA5VxISY7mgYTn0qjjf5b3ZkeBx0TFIuNWRLtO6XSFnjlQNd20MfUIKRWQAJEqoVPtN6mMdH5UPWNbtPR_srLpMecpyawyRqUwYPY20laSlWm1H9Mowi6njv5s8uNoJxuakSZ9iPDFvr57qB4=w1920-h800-no?authuser=0" width="500" height="208">
+                           </center>
+                           <br>
+                        </li>
+                        <li class="list-group-item">
+                           Goblin caves recolored to be slightly darker & less orange.
+                           <center>
+                              <br>
+                              <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/2.gif" width="750" height="312">
+                              <br>
+                              <br>
+                           </center>
+                        </li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> The Goblin song is retained in order to pay homage to the book, but it has been moderately trimmed to remove some of the weirdness (fist pumping, dancing in a circle, stepping on Goblins, and some dialogue). Directly after, the extended moments with the captured Dwarves is kept, with only small trims to the King's silly dialogue about Nori's stolen silverware. As always, I want the audience to see as much of each Dwarf as possible so we hopefully end up actually caring about them.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 5-->
+               <div id="chapter5" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">5. Riddles in the Dark</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">The first time we fully see Gollum close up is when he jumps out in front of Bilbo. He is not introduced earlier nor is he seen dropping the ring, leaving the origin of the ring a mystery to the audience (like the book) before we learn it was Gollum's.</li>
+                        <li class="list-group-item">
+                           Gollum’s cave recolored to be slightly darker.
+                           <center>
+                              <br>
+                              <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/1.gif" width="750" height="312">
+                              <br>
+                              <br>
+                           </center>
+                        </li>
+                        <li class="list-group-item">Cut all ridiculous combat techniques and set pieces throughout the Goblin escape chase, reducing the sequence from 4 minutes to just 1. Anything that was extremely unrealistic or physically impossible has been removed; this philosophy has been maintained for every action sequence throughout the fan edit.</li>
+                        <li class="list-group-item">Goblin King does not return at the end nor does the Company slide down the entire cavern on a bridge.</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 6-->
+               <div id="chapter6" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">6. Out of the Frying-Pan into the Fire</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/Frying.webp">
+                        </li>
+                        <li class="list-group-item">Trimmed out Gandalf noticing Bilbo hiding the ring in his pocket. While Gandalf may be suspicious, he does not know for sure that Bilbo has a ring, which we will see him discover in <i>The Fellowship of the Ring</i>. Digitally altered the shot of the wargs arriving to remove Azog, originally a visual effect edit by /u/thechaptereditor.</li>
+<li class="list-group-item">
+    <center>
+        <img class="card-img-fluid default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLW8XF7AlGtdow02qF3bd8UeNpD2EXcHZNv-4Un-5b2jlznTh5RINoWKzlXauLmbq26Di4mbuDEjQpORdLPOfKGN2_JUdVpuqSz3Fbt2vzo-DoocpEz_MIbnqVT8MDITASq5BrPs5w7dZLgLwlxT6Rf7=w1920-h800-no?authuser=0" width="500" height="208">
+    </center>
+    <br>
+    With all shots of Azog removed, closeups of a generic Orc leader (taken from earlier in the film) have been repurposed here to sell the moment and compensate for the gaps. As pictured above, the shots have been tweaked to naturally fit into their new placement.
+    <br><br>
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3HF4PX2Mtto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+</li>
+
+                        <li class="list-group-item">Removed Bilbo killing a Warg to keep him as a non-warrior. Throughout this edit, he only ever struggles to fight one Goblin and then kills two spiders, mostly with the help of the ring or element of surprise. Other than these instances of combat, he uses his wits and brains to escape situations, like the book.</li>
+                        <li class="list-group-item">Removed Thorin's charge with the Nazgul theme, as again, Azog is not present here. Instead, right as some of the Dwarves are about to fall, the Eagles arrive to save the day.</li>
+                        <li class="list-group-item">New Eagle escape montage using the unused piece “Good Omen” to show their escape and progression. With this, removed the reuse of the Gondor theme that was in the original film.</li>
+                        <li class="list-group-item">
+                           As Thorin was not wounded by Azog in my cut, the cuts  on his face have been removed using deep fake technology and his unconscious body seen on Carrock has been replaced with a rock.
+                           <br><br>
+                           <center>
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLV1YLwkBb8HHe-ObsBpi-K5rDEhdcosgu1OySfxPCqQ4Q9FwmPLjnl7KYvcwJlH8FlJdTvh38oNtrlLk8FRoFsvDkcyFAMeF18Zovzll6KNmDpSsXa6Pv_SCyDzCOJKdYNOqoCxGOrAzbXOcOBIOSPe=w1280-h533-no?authuser=0" width="500" height="208">
+                              &#160; &#160; &#160;
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLWByxAU7LTRoF_7jcnwhIJnrKKfaO18Gpz2JngsEqfGn7CwJxXWyp7_2TQX_zvg4ZXIOg5dNj9ocAlqJzuiGGtRZRNE-Nwu2S5h2U0L14yDkJxGHjjmCCkt_Aa-adj2YNBacc6XiRjPc0f7oSWNwUl2=w1280-h533-no?authuser=0" width="500" height="208">
+                           </center>
+                           <br>
+                        </li>
+                        <li class="list-group-item">Directly after Carrock, we cut to black and transition into the intermission. This makes for a perfect rest break that also covers up the time jump from <i>An Unexpected Journey</i> to <i>The Desolation of Smaug</i>, as we reflect on how far the Company has come and how far they still have to go.</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 7-->
+               <div id="chapter7" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">7. Queer Lodgings</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/beorn.webp"></li>
+                        <li class="list-group-item">Removed original <i>The Desolation of Smaug</i> opening with the Bree flashback and title screen. Instead, we cut right back to the Company after they have left Carrock, which according to Peter Jackson’s audio commentary is about six hours later.</li>
+                        <li class="list-group-item">Rearranged the sequence where the Company discovers Beorn in the wild and runs through the forest towards his house to account for removing the presence of Azog and fixing some illogical geography.</li>
+                        <li class="list-group-item">Removed Bilbo petting the ring in Beorn’s house, as any connection to Sauron or self corruption with the ring is kept to a complete minimum, with only a few music cue references throughout this edit.<br><i>This is both more accurate to the book and better for a tighter narrative that does not waste time on referencing future events. Instead, it allows the audience to experience a natural growing presence of evil that Gandalf discovers in The Fellowship of the Ring, giving more emotional weight to the moment when it comes to our surprise that the ring has changed Bilbo.</i></li>
+                        <li class="list-group-item">Removed all references to Azog and the High Fells. Instead, all we learn is that the wild is crawling with Orcs and their numbers are growing, which we will see paid off when all the Orcs show up in the final battle.</li>
+                        <li class="list-group-item">Removed the flash of Sauron’s eye in Mirkwood (along with all future instances of it) as well as Bilbo lying about the ring to Gandalf. These elements were more forced references to Sauron and the evilness of the ring.</li>
+                        <li class="list-group-item">Gandalf finds a red marking in Mirkwood which sparks his decision to leave the company.<br><i>Most audiences won’t know this is referencing Sauron, they will only know that there is some unknown evil that needs investigating. It works well to keep this plot mysterious. That way, both stories can work on their own and Sauron is introduced in the story where he is relevant, not in The Hobbit.</i></li>
+                        <li class="list-group-item">Gandalf departs and his entire side quest to the High Fells and Dol Guldur is removed, with him only returning right before the final battle to warn of an Orc army. That way, his disappearance still receives some form of explanation and weight, it was not for nothing.</li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> The book-inspired introduction to Beorn is kept, which brings some nice levity and charm. It also makes much more sense than the theatrical version where Beorn was instantly allowing hospitality. We also keep some minimal discussion about Orcs and the Necromancer between Beorn and Gandalf which help explain his departure from the company.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 8-->
+               <div id="chapter8" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">8. Flies and Spiders</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Small trims to remove any antagonism from Thorin towards Bilbo, as they should be building their friendship still.</li>
+                        <li class="list-group-item">
+                           Inserted a repurposed and color corrected shot from a scene in the theatrical version showing how far off the path they are, rather than having the company wander off the path on purpose.<br><br>
+                           <p style="text-align:center;"><img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/forest.webp" width="720" height="300" >
+                        </li>
+                        <li class="list-group-item">Cut Bilbo falling down after freeing the Dwarves. This originally led to him going crazy fighting a baby spider and worrying about losing the ring, which was not needed here.</li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/mirkwood.webp"></li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> The extended Mirkwood sequence which draws heavily from the book is kept, with the Enchanted River, White Deer, Bombur falling asleep, more wandering, and even some nice dialogue reminiscent of the text (absence of wind & "no end to this accursed forest!").</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 9-->
+               <div id="chapter9" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">9. Barrels Out of Bond</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">The Elves jump up out of hiding to capture the Dwarves rather than Legolas’s ridiculous original introduction. The moment is very reminiscent of the Fellowship entering Lothlorien and being surprised by Elves.</li>
+                        <li class="list-group-item">Legolas makes his one minute cameo here, never to return for the rest of the movie. Tauriel is simply a background Elf warrior, as all of her scenes are removed. The love triangle is nonexistent in this fan edit.</li>
+                        <li class="list-group-item">Small trims to remove Gimli fan service and Legolas calling the Elves of Gondolin his kin, as in the actual Tolkien lore he would not have.</li>
+                        <li class="list-group-item">
+                           Added subtitle translation for Thorin’s Dwarvish insult to Thranduil so that the audience can better appreciate the struggle between both races, that Thorin wishes Thranduil's people would face the same downfall.
+                           <center><img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLV8lQbzty1eXWudgSzejoSSvvlwmIMdexjNXb5ZdmyMfSPTjlY7qb26feW4zazVSX0K9QlvexzlYDrVyRaDjHzlu4Brvhg3ETuSdaQQ6WR5GQJqaTwj0ZWSutzSsWvuj7aFU4h1tNgvvMGma3sQ_se7=w647-h107-no?authuser=0" width="302" height="50">
+                           </center>
+                           <br>
+                           Cut the second half of the Thorin and Thranduil scene to remove the weird “serpent mouth” transformation. Thus, Thranduil’s response to the insult is removed which originally gave context to it, giving even more reason for me to show the above translated subtitle.
+                        </li>
+                        <li class="list-group-item">Inserted a line of dialogue where Thorin says <b>"I am sorry I've doubted you"</b> to Bilbo after being freed from the cells. This is from an earlier scene that had to be cut, but works great here to help naturally develop their friendship, especially because this was the point in the book where Thorin began respecting Bilbo. Thorin then orders the Dwarves to listen to Bilbo and compliments him once escaped. I think keeping their friendship at the forefront of this edit is key.
+                        </li>
+                        <li class="list-group-item">Recut and rescored the barrel escape so that no Orcs or Elves pursue the company, which not only makes the sequence closer to the book but also removes some of the most ridiculous CGI action.
+                        </li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/barrels.webp"></li>
+                        <li class="list-group-item"><b>Deleted Scenes Added:</b> Inserted two cut shots of Bombur sharing Elf food with Bifur, who then spits it out. These shots taken from the Appendices behind the scenes place some focus on the less popular Dwarves and help show that we have been bored in the cells for a while.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 10-->
+               <div id="chapter10" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">10. A Warm Welcome</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Removed Kíli's wound subplot and any reference to Orcs tracking them, as ever since we entered Mirkwood the pursuing Warg pack plotline has ended. As soon as the Dwarves get out of the barrels, Bard is waiting there ready to confront them. Painted over Kíli's face to make him look more warm and saturated rather than pale and sickly.</li>
+                        <li class="list-group-item">New digitally altered shots to remove any arrows stuck to the barrels after the Dwarves get on land.</li>
+                        <li class="list-group-item">The Master is now a minor character who is introduced when our characters run into him. Almost all of Alfrid is entirely removed, leaving him as a background character with only two lines.</li>
+                        <li class="list-group-item">No Dwarves are left behind in Lake-town, it is assumed that the entire company leaves together.</li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/cold%20welc.webp"></li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> The extended walk through Lake-town is included to give the location more depth, but is abbreviated to remove the part where guards originally tried to capture the Dwarves. Consequently, there is no more sneaking through toilets - the Dwarves just enter Bard's house normally. We also keep part of Bilbo vouching for Thorin to help build their friendship, it feels earned especially after Thorin said several nice things to Bilbo during the escape from the Woodland Realm.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 11-->
+               <div id="chapter11" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">11. On the Doorstep</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           Inserted a color adjusted shot from <i>The Battle of the Five Armies</i> showing Fíli, Kíli, Bofur, and Óin walking towards Erebor to help sell the illusion that all Dwarves are present.<br><br>
+                           <center>Before / After <i>(Saturation and tint decreased to match gloomy mood of surrounding shots</i></center>
+                           <p style="text-align:center;"><img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/oin%20walking.webp" width="720" height="300" >
+                        </li>
+                        <li class="list-group-item">Added digitally altered shot that shows all 14 members of the Company hiking to Erebor originally made for the Maple Films fan edit.</li>
+                        <li class="list-group-item">Recut and rescored the secret door scene to remove the Dwarves giving up at the first sign of failure to make them seem more competent. Repurposed and regraded a couple shots of the Dwarves and Thorin to help suggest that they never left and were always there while Bilbo was figuring out the riddle.</li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/doorstep.webp"></li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> We get some additional dialogue from Balin & Bilbo outside the Desolation of Smaug wasteland.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 12-13-->
+               <div id="chapter12" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">12-13. Inside Information / Not at Home</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/dragon.webp"></li>
+                        </li>
+                        <li class="list-group-item">Smaug's lair recolored to be slightly darker.
+                        <li class="list-group-item">Heavily recut the Smaug scene to remove all cutaways so that the entire sequence plays out continuously with just Bilbo and Smaug, no cuts to the Dwarves, Lake-town, or Dol Guldur.</li>
+                        <li class="list-group-item">Slight rearrangement to get all the dialogue closer to the order that it was in the book, while also removing Smaug’s mention of “Oakenshield,” as that name was made long after the Dwarves fled Erebor.</li>
+                        <li class="list-group-item">Removed the entire Dwarf chase sequence in Erebor to place the focus on Bilbo, remove unnecessary action, stick to the book, and most importantly make Smaug appear competent.</li>
+                        <li class="list-group-item">I have retained as much of Smaug's dialogue as possible by rearranging lines, ensuring that not a single book reference or "good" line was cut. For example, lines Smaug says to Thorin in the movie that really should have been said to Bilbo have been repurposed.</li>
+                        <li class="list-group-item">
+                            <center>
+                                <br>
+                                <img class="card-img-fluid default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/smaug.gif" width="750" height="312">
+                                <br><br>
+                            </center>
+                            New digitally altered shot to show Smaug breaking out of Erebor without being covered in liquid gold.<br><br>
+                            <center>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Dqhtd0Eb9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </center>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 14-->
+               <div id="chapter14" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">14. Fire and Water</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/firewater.webp"></li>
+                        </li>
+                        <li class="list-group-item">The edit seamlessly transitions from <i>The Desolation of Smaug</i> to <i>The Battle of the Five Armies</i> as Smaug begins to attack Lake-town.</li>
+                        <li class="list-group-item">Footage is heavily rearranged and edited to depict the town in chaos as Bard fights against Smaug in a sequence that is more straightforward and faithful to the book.</li>
+                        <li class="list-group-item">
+                           Bard kills Smaug without the help of his son Bain using new digitally altered shots removing him entirely.
+                           <center>
+                              <br>
+                              <img class="card-img-fluid" class="default-image" src="https://raw.githubusercontent.com/m4studios/hobbit-book-edit/refs/heads/main/images/bard.gif" width="750" height="312">
+                              <br>
+                              <br>
+                           </center>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> Extended shots of Bard running through the town and almost getting killed, which helps flesh out the sequence and provide tension.</li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 15-->
+               <div id="chapter15" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">15. The Gathering of the Clouds</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Removed Bilbo pulling out the Arkenstone in broad daylight, along with the flashbacks to Smaug that never happened in my edit because Smaug never talked about Thorin or his corruption.</li>
+                        <li class="list-group-item">Removed dragon sickness plot and made <b>many</b> small trims to Thorin’s character to downplay his craziness, instead giving him a slower and more natural descent into his excessive pride and stubbornness. This is both more book accurate and makes his character more interesting / relatable / sympathetic, rather than robbing him of his agency that it was "just the dragon sickness" making him bad.</li>
+                        <li class="list-group-item">Gandalf finally shows back up after his long departure to warn everyone of Orcs coming. Cut the tent scene short to remove the discussion about Azog and Sauron’s master plan to stay in line with the scope of this story. The Orcs just want a piece of the Lonely Mountain after learning of Smaug's death like the other races, that's it.</li>
+                        <li class="list-group-item">
+                           The Orcs march towards the Mountain with a redubbed subtitle giving context for why they want to attack (which is also mirrored again during the battle). Applied color correction to marching scene so it appears later in the day with a warmer reddish look that fits its new placement.<br><br>
+                           <center><img class="card-img-fluid" class="default-image" width=500 height=181 src="https://lh3.googleusercontent.com/pw/AM-JKLVvoy7VrbD39xjOExu26XvQw5LERCIg-R7jbk8H-RjoGXzofb2hg4BjJ2ri12U3GtKIFs6DYXh_MEOuoXzMvrsBV0nctDccAGuBaqqEB9BEBq1v4NklFByLM0Jo0wXWDXXKqGas7kLnI4FrvpNWtQf2=w1000-h362-no?authuser=0"><br><br></center>
+                        </li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/erebort.webp"></li>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 16-->
+               <div id="chapter16" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">16. A Thief in the Night</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/sneaking.webp"></li>
+                        </li>
+                        <li class="list-group-item">Bilbo delivers the Arkenstone to Bard/Thranduil and reunites with Gandalf, while Alfrid's presence has been entirely removed.</li>
+                        <li class="list-group-item">This is the one moment in the entire edit where “dragon sickness” is mentioned, which I kept on purpose. It is spoken by Gandalf who is known for speaking in riddles/metaphors, and the dialogue contributes to his friendship with Bilbo, while also paying homage to the fact that the phrase "dragon sickness" was mentioned once in the book.</li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> The beautiful scene between Bifur & Bilbo is kept, which not only mirrors a scene from way earlier, but also sets up Bilbo's motivations for why he cares about the Dwarves: they are nice to him. Additionally, some extended dialogue in Dale is kept to communicate to the audience why Thranduil does not believe Gandalf is telling the truth about Orcs.</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 17-->
+               <div id="chapter17" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">17. The Clouds Burst</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/battle.webp"></li>
+                        </li>
+                        <li class="list-group-item">A 55 minute battle has now been reduced to a much more straightforward and well-paced 18 minute battle sequence that also sticks to flow described on the book; the good guys start out winning, then start losing, then Thorin charges and instills hopes, they start losing again, and then finally they win it all when the Eagles show up and the Orc commander is killed. Meanwhile, Bilbo is knocked out about two-thirds of the way into the battle.</li>
+                        <li class="list-group-item">Reverted to the theatrical version of Dáin's arrival to remove the Elf vs. Dwarf combat.</li>
+                        <li class="list-group-item">
+                           New digitally altered shot that shows tunnels in the mountainside before the Orcs show up, hinting that they were recently dug.
+                           <center>
+                              <br>
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLUCNjuMuaSNbqxeoOYKlr8ZDApG4MEONBoM7C1q9A4Aoq7wDPYc070WL9tR0fWblVK5AYsYLoHRf7P6tcgU0szalcwlPghZIKAQb03OEN3oGjso5FRzqY-WxXbbKYExaoU5-3ZtwDaDaLeOBknxzcAd=w1920-h800-no?authuser=0" width="500" height="208">
+                              <br>
+                              <br>
+                           </center>
+                        </li>
+                        <li class="list-group-item">Recut Azog’s introduction to remove the Wereworms and instead have his horn be the sound that draws everyone’s attention to his introduction.</li>
+                        <li class="list-group-item">Removed wacky design moments and set pieces, including no more catapult trolls, battering ram trolls, peg-leg trolls, etc.</li>
+                        <li class="list-group-item">Removed the subplot of Bard and his children. Bard is now just the commander of the Men.</li>
+                        <li class="list-group-item">New sequence with rescored soundtrack & rearranged footage to depict Bilbo slipping away from the battle like in the book as he is not a warrior. However, he only fully retreats in the "sad montage" when the good guys are clearly losing, justifying his actions. Regardless of the book, I still found this much more plausible than showing an untrained Bilbo suddenly able to hold his own against multiple massive Orcs in full-armor. </li>
+                        <li class="list-group-item">Thorin returns to the battle after Dwalin leaves him at a loss for words, the focus is brought back to Thorin's own actions and not just a dragon sickness inflicted upon him. This moment comes naturally as so many tweaks have been done to Thorin's character to reduce his craziness, it feels like he really just did have a change of heart after realizing his mistakes now.</li>
+                        <li class="list-group-item">
+                           As Bilbo is far away from the battle and not in Dale anymore, we do not see him react to Thorin’s charge. Instead, a repurposed shot of Bard has been inserted when the horn of Erebor sounds right before Gandalf reacts. Slow motion applied and audio adjusted to fit right in.
+                           <center>
+                              <br>
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLXcrupJR0iKZCxqff1ah-e1G50J-8vXN61tQ6xG-MNB6mGXRXoX33yIMjUC6ibCpxDu2sdRbBCneN6vc4qha3YxxrMNZ3H7zk9VCCeJZjv1YVhOQqajJ4i64g3HAU6qcFdsj3JM0dpHn0eNfig4SWyk=w1280-h534-no?authuser=0" width="500" height="208">
+                              <br>
+                              <br>
+                           </center>
+                        </li>
+                        <li class="list-group-item">Bilbo has found his way into Ravenhill, but is suddenly swarmed by bats and knocked out by an Orc, before fading to black. New visual effect to show him re-appearing with his ring off. Background has been digitally altered to remove Dwalin, as Bilbo is supposed to be in Ravenhill by himself at this point.</li>
+                        <li class="list-group-item">Next begins an action montage using the "Misty Mountains" theme while we see the Company fight all together against the Orcs. Dáin/Thorin embrace and we see Thorin decide the Orc leader must be killed. Spliced in some shots of Gandalf narrating to help smooth the flow.</li>
+                        <li class="list-group-item">Now only Fíli, Kíli, and Thorin go to Ravenhill to try to kill Azog. Bilbo is knocked out, and Dwalin is not present as it created a loose end when Thorin died alone.</li>
+                        <li class="list-group-item">
+                           Fíli’s death is relatively the same with only a redubbed subtitle, as Azog has no clue about the family structure of Durin's folk in this cut. Kíli is now just killed by an unknown Orc while trying to fight to defend Thorin, with Tauriel not involved.<br><br>
+                           <center><img class="card-img-fluid" class="default-image" width=500 height=151 src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/subs.webp"><br><br></center>
+                        </li>
+                        <li class="list-group-item">Thorin’s final duel has been shortened and the part where Azog fell under the ice and jumped back up has been removed. It was not necessary to have such a drawn out showdown when the build up to this fight has been substantially reduced, and you could also argue it went on too long in the originals.</li>
+                        <li class="list-group-item">After Thorin's nephews both die, Orc reinforcements and war bats show up as we are brought to another ultimate low. A montage of the good guys losing again highlights that war is not glorious, as Bilbo discusses in the book.</li>
+                        <li class="list-group-item">
+                           Eagle scene recut to remove Radagast as well as digitally erase him from one of the shots.
+                           <center>
+                              <br>
+                              <img class="card-img-fluid" class="default-image" src="https://lh3.googleusercontent.com/pw/AM-JKLWCymNKTTKU0roD6HfjP0CA-6J1pmseKZ61LbacJS9zRHU9fi82PELfMfGvROSmed15AfbxFId-rzZhpJCCJByAjBfxrc7G2u19axivDcQrWbGnNEOPkbfKvR4Cbh2sk59P4SKJzSyvFuCcFBUul3wi=w1920-h800-no?authuser=0" width="500" height="208">
+                              <br>
+                              <br>
+                           </center>
+                        </li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> Thorin has an additional piece of dialogue at the gate which mirrors the book and we also get another line from Gandalf. At the start of the battle, we see more of the Dwarf army and Thranduil/Dáin fighting, which aids in maintaining the pacing of the battle to account for all the intolerable action I have cut. After Thorin's final charge, we also see some extended clips of the Company fighting Orcs during the rescored "Misty Mountains" montage, and then a few more extended seconds of Beorn fighting at the end.</li>
+                        <li class="list-group-item"><b>Deleted Scenes Added:</b> Dwalin's cut line of dialogue in the throne room where he said "Bilbo is right" has been re-inserted, sourced from the film's trailer. This adds more emotional weight and increases Bilbo's role in the battle and Thorin's redemption.</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Chapter 18-19-->
+               <div id="chapter18" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">18-19. The Return Journey / The Last Stage</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Thranduil’s conclusion is a repurposed and recut scene from earlier in the movie, previously highlighting his motivations to retreat, but now being used as a scene where he reflects on the casualties of war. This is impactful because his fellow Elves would have lived forever if it were not for the battle, perhaps it was not worth it. Thranduil is an intentional mirror to Thorin, both prideful kings who conflict with others, suffered greatly, and grew in the end.</li>
+                        <li class="list-group-item">Restructured dialogue in the Bilbo and Gandalf departure scene to reflect the dialogue in the book almost one-to-one. Additionally, this means Gandalf does not mention the ring because he still has no idea Bilbo has it (even if he is suspicious), we see him discover the ring in <i>The Fellowship of the Ring.</i></li>
+                        <li class="list-group-item"><img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/shire.webp"></li>
+                        </li>
+                        <li class="list-group-item"><b>Extended Scenes Kept:</b> Thorin's funeral is included.</li>
+                        <li class="list-group-item"><b>Deleted Scenes Added:</b> Gandalf's cut eulogy audio found in the Appendices behind the scenes has been re-inserted, adding even more emotional weight to this scene.</li>
+                        <li class="list-group-item"><b>End Credits:</b> Sourced from <i>An Unexpected Journey</i>, but edited to reflect the starring cast of all three films together, along with the full cast of side characters that were visible in my edit. Renamed credit listing for “Azog” to “Bolg” as a little homage to the book, as the name "Azog" is no longer spoken. New main credit music “Misty Mountains Cold” by Clamavi De Profundis with their names added to the credits.</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Special Features-->
+               <div id="special" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">Special Features</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           While many flashbacks and sideplots were cut, a lot of footage had potential to be enjoyable in its own right and was decently accurate to the Tolkien lore as described in his other works outside of <i>The Hobbit</i>. All material has been edited under the same philosophies as the main feature. Consistent visual changes applied.
+                           <center> <br>
+                              <img class="card-img-fluid" class="default-image" width=640 height=360 src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/special.webp">
+                           </center>
+                        </li>
+                        <li class="list-group-item">I have created my own <b>"Durin's Folk"</b> 3-part series of flashbacks that focuses on Thorin & the Dwarves, giving both more depth to his character and general historical context. These sequences did an adequate job of adapating Tolkien's lore, specifically from <i>The Lord of the Rings</i> Appendices.</li>
+                        <li class="list-group-item">I have also created my own <b>Deleted Scenes</b> reel that includes scenes with <b>The White Council</b>, the attack on <b>Dol Guldur</b>, and more of Thorin.</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--Downloads-->
+               <div id="downloads" class="col mt-3">
+                  <div class="card neumorphstatic">
+                     <div class="card-header">
+                        <h2 class="pt-2">Downloads</h2>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                     <li class="list-group-item">
+                        <center>
+                           <a href="https://drive.google.com/drive/folders/1Fxh3Y3sJI8jniBwGyBGvN5l-uzCXJRoX?usp=drive_link" target="_blank" class="button button1" title="Main project folder">Download - All Files</a>
+                           <a href="magnet:?xt=urn:btih:fe2f0cfbcd8d6f062dc5273db43580e0c58470e3&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20%28Blu-ray%20ISO%20discs%29&tr=http%3A%2F%2Fhobbit.zapto.org%3A9000%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce
+                              " target="_blank" class="button button1" title="A faster way to download the ISO release" >Download - ISO Torrent</a>
+                           <a href="magnet:?xt=urn:btih:b8da3e6c5341ab5b5c47e025b4fb1d1c039e44c2&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(1080p).mkv" target="_blank" class="button button1" title="A faster way to download the 1080p release" >Download - 1080p Torrent</a>
+                           <a href="magnet:?xt=urn:btih:332a50861db01b297a312de0eecf5b7734c4b7e2&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(720p).mp4" target="_blank" class="button button1" title="A faster way to download the 720p release" >Download - 720p Torrent</a>
+                           <br>
+                           <i>You need to download a torrent client if you wish to download via torrenting. If you are struggling, read the FAQ document inside the first link.</i>
+                        </center>
+                     </li>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           <b>Blu-ray ISOs [35-40 GB per disc]</b>
+                           <ul>
+                              <li>1080p Highest Quality [30mbps CBR]
+                              <li>
+                                 Audio:
+                                 <ul>
+                                    <li>Main: 5.1 DTS-HD Master Audio
+                                    <li>Alternate: DTS Core
+                                    <li>Bonus: 2.0 Dolby Digital AC-3 [Editor's Commentary Track]
+                                 </ul>
+                              <li>Chapters: Built in
+                              <li>Subtitles: Built in [English only]
+                              <li>Special features, motion menus, chapter selection, and set up page
+                           </ul>
+                        </li>
+                        <li class="list-group-item">
+                           <b>MKV [25 GB]</b>
+                           <ul>
+                              <li>1080p High Quality [11mbps VBR]
+                              <li>
+                                 Audio:
+                                 <ul>
+                                    <li>Main: 5.1 DTS
+                                    <li>Alternate: 5.1 Dolby Digital AC-3
+                                    <li>Bonus: 2.0 Dolby Digital AC-3 [Editor's Commentary Track]
+                                 </ul>
+                              <li>Chapters: Built in
+                              <li>Subtitles: Built in [All available languages]
+                           </ul>
+                        </li>
+                        <li class="list-group-item">
+                           <b>MP4 [8 GB]</b>
+                           <ul>
+                              <li>720p Medium Quality [4mbps VBR]
+                              <li>Audio: 5.1 AAC
+                              <li>Chapters: Built in
+                              <li>Subtitles: Must download individually
+                              <li>iTunes compatible with proper metadata
+                           </ul>
+                        </li>
+                        <li class="list-group-item">
+                           <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4studios/m4studios.github.io/main/images/bluray_black_new-art-1.webp" alt="The Hobbit Book Accurate" >
+                        </li>
+                        <li class="list-group-item"><b>Subtitle Languages:</b> English [Closed Captions], English, Bulgarian, Chinese (Simplified), Czech, Dutch, French, German, Greek, Italian, Norwegian, Polish, Portuguese (Brazilian), Slovenian, Spanish, Swedish, Dwarvish, Translating Template</li>
+                        <li class="list-group-item">
+                           <b>Special Features [Included in ISO disc version]</b>
+                           <ul>
+                              <li><b>Bonus Scenes:</b> As described above, flashbacks/scenes that didn't make the cut but were still interesting nonetheless.
+                              <li><b>Editors Audio Commentary:</b> Alternate audio track on the full film and all special features discussing every change made I talk not just about where changes were made, but also why and how they were done. <i>Commentary is also accessible on the MKV release.</i>
+                              <li><b>Music:</b> “Misty Mountains” & “Blunt the Knives” playable from the menu in their full studio quality.
+                              <li><b>Release Trailer:</b> Promotional trailer in the style of <i>An Unexpected Journey</i>'s trailer, except as if it was for a single film.
+                              <li><b>Behind the Scenes:</b> A recording of what the project looks like in my editing software, over viewing how everything was put together and some of my common techniques.
+                           </ul>
+                        </li>
+                     </ul>
+                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="d-none d-lg-block col-2"></div>
+      </div>
+      <footer class="text-center m-2">
+         <a href="https://www.youtube.com/c/m4studios" style="color: #5e5e5e;">M4 Studios</a>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+         $('.slider').slider();
+      </script>
+   </body>
